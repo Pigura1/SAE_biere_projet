@@ -8,7 +8,7 @@ function generateTrombinoscopePage() {
     $data = [ 
         'students' => getAllStudents(),
         'page_title' => "Trombinoscope", 
-        'view' => 'app/view/trombinoscope.view.php', 
+        'view' => 'app/view/trombi.view.php', 
         'layout' => 'app/view/common/layout.php', 
     ]; 
     generatePage($data);

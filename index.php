@@ -15,7 +15,7 @@ switch ($route) {
         generateHomePage();
         break;
     case 'trombinoscope':
-        require_once 'app/controller/trombinoscope.controller.php';
+        require_once 'app/controller/trombi.controller.php';
         generateTrombinoscopePage();
         break;
 
