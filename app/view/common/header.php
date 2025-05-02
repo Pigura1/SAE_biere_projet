@@ -13,13 +13,13 @@
         <nav>
             <ul>
                 
-                <li><a href="product.view.php">Produits</a></li>
-                <li><a href="trombi.view.php">À propos</a></li>
+                <li><a href="index.php?route=produit">Produits</a></li>
+                <li><a href="index.php?route=trombinoscope">À propos</a></li>
                 <li><a href="#">Brassage</a></li>
-                <li><a href="accueil.view.php">
+                <li><a href="index.php?route=home">
                     <img src="public/images/logo.png" alt="Accueil" />
                 </a></li>
-                <li><a href="contact.view.php">Nous contacter</a></li>
+                <li><a href="index.php?route=contact">Nous contacter</a></li>
                 <li><a href="#">
                     <img src="public/images/achat.png" alt="Achat" />
                 </a></li>
