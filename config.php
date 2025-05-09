@@ -1,13 +1,13 @@
 <?php
 
 /** The name of the database for our website */
-define( 'DB_NAME', 'biere_base_de_données' );
+define( 'DB_NAME', 'biere_base_de_donnee' );
 
 /** Database username */
-define( 'DB_USER', 'user' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );

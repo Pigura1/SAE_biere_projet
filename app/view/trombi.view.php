@@ -22,7 +22,7 @@
               }
               ?>
 
-              <img src="public/images/<?= $photo ?>" alt="photo de <? $student['Prenom'] ?> <?= $student['nom'] ?>" />
+              <img src="public/images/<?= $image ?>" alt="photo de <? $student['Prenom'] ?> <?= $student['nom'] ?>" />
             </figure>
 
             <div class="card-infos">
