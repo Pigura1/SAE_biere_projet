@@ -50,3 +50,31 @@ function getPageAmount(): int
 {
     return ceil(getStudentsAmount() / 12);
 }
+function Trombinoscope()
+{
+    $page = 1;
+    if (!empty($_GET['page'])) {
+        $page = $_GET['page'];
+    }
+
+    if (!(isset($page) && ctype_digit(strval($page)))) {
+        die("Error 404 : The page does not exist");
+    }
+
+    if (!($page > 0 && $page <= getPageAmount())) {
+        die("Error 404 : The page does not exist");
+    }
+
+    $data = [
+        'pageAmount' => getPageAmount(),
+        'page' => $page,
+        'students' => getAllStudents(),
+        'studentAmount' => getStudentsAmount(),
+        'studentsPage' => getNextStudentsPage($page),
+        'page_title' => "Trombinoscope",
+        'view' => 'app/view/trombinoscope.view.php',
+        'layout' => 'app/view/common/layout.php',
+    ];
+
+    generatePage($data);
+};

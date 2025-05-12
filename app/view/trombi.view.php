@@ -37,21 +37,6 @@
         </a>
       </div>
         <?php endforeach ?>
-        <nav class="pagination">
-    <ul>
-      <li class="prev"><a href="/?route=trombinoscope&page=<?php echo $data["page"] - 1 ?>">Préc.</a></li>
-      <?php for ($i = 1; $i <= $data['pageAmount']; $i++): ?>
-        <li class="<?php echo ($data['page'] == $i) ? 'current' : ''; ?>">
-          <?php if ($data['page'] != $i) {
-            echo "<a href='/?route=trombinoscope&page=$i'>$i</a>";
-          } else {
-            echo $i;
-          }
-          ?>
-        </li>
-      <?php endfor ?>
-      <li class="next"><a href="/?route=trombinoscope&page=<?php echo $data["page"] + 1 ?>">Suiv.</a></li>
-    </ul>
-  </nav>
+      
     
   </main>
