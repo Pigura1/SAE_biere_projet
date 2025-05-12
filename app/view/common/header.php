@@ -23,9 +23,10 @@
                 <li><a href="#">
                     <img src="public/images/achat.png" alt="Achat" />
                 </a></li>
-                <li><a href="#">
-                    <img src="public/images/compte.png" alt="Compte" />
-                </a></li>
+                
+                <div class="login" aria-label="You're logged">
+                    <a class="btn-login" href="index.php?route=compte">Compte</a>
+                </div>
             </ul>
         </nav>
     </header>

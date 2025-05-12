@@ -30,6 +30,11 @@ switch ($route) {
     case 'student':
         require_once 'app/controller/trombi.controller.php';
         generateStudentPage();
+        break;
+    case 'compte';
+        require_once 'app/controller/compte.controller.php';
+        generateComptePage();
+        break;
     default:
         exit;
 }
