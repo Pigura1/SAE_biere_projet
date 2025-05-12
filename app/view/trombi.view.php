@@ -21,7 +21,7 @@
   <div class="student-cards">
     <?php foreach ($equipe as $student): ?>
       <div class="student-card">
-        <a href="?route=fiche&id=<?php echo $student["id_equipe"] ?>">
+        <a href="?route=fiche&id_equipe=<?php echo $student["id_equipe"] ?>">
           <figure class="photo">
             <img src="public/images/small/<?php echo $student['Images'] ?>" alt="photo de <?php echo $student['Prenom']; ?>" />
           </figure>

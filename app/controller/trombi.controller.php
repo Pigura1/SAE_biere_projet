@@ -16,7 +16,7 @@ function generateTrombinoscopePage() {
 
 function generateStudentPage() {
 
-    $id = $_GET['id']; //TODO: pas sécurisé 
+    $id = $_GET['id_equipe']; //TODO: pas sécurisé 
 
     $data = [ 
         'equipe' => getStudent($id),

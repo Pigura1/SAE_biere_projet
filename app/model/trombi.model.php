@@ -13,8 +13,8 @@ function getAllStudents(): array
 function getStudentById(int $id): array
 {
     $db = getDatabaseConnexion();
-    $stmt = $db->prepare("SELECT * FROM equipe WHERE id=:id");
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt = $db->prepare("SELECT * FROM equipe WHERE id_equipe=:id_equipe");
+    $stmt->bindParam(':id_equipe', $id, PDO::PARAM_INT);
     $stmt->execute();
     return $stmt->fetch();
 }
@@ -22,9 +22,9 @@ function getStudentById(int $id): array
 function getMaxStudentId()
 {
     $db = getDatabaseConnexion();
-    $stmt = $db->prepare("SELECT id FROM equipe ORDER BY id DESC LIMIT 1");
+    $stmt = $db->prepare("SELECT id_equipe FROM equipe ORDER BY id_equipe DESC LIMIT 1");
     $stmt->execute();
-    return $stmt->fetch()["id"];
+    return $stmt->fetch()["id_equipe"];
 }
 
 function getNextStudentsPage(int $page): array

@@ -35,6 +35,10 @@ switch ($route) {
         require_once 'app/controller/compte.controller.php';
         generateComptePage();
         break;
+    case 'fiche';
+    require_once 'app/controller/fiche.controller.php';
+    generateFichePage();
+    break;
     default:
         exit;
 }
