@@ -46,7 +46,7 @@
         return;
       }
 
-      fetch("subscribe.php", {
+      fetch("contact.model.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
