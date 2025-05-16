@@ -1,19 +1,19 @@
 <?php
 
-function getAllStudents(): array {
+function getAllProducts(): array {
 
     $pdo = getDatabaseConnexion();
-    $sql = 'SELECT * FROM equipe';
+    $sql = 'SELECT * FROM articles';
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll();
 }
 
-function getStudent(int $id): array {
+function getProductspe(int $id): array {
     $pdo = getDatabaseConnexion();
-    $sql = "SELECT * FROM equipe WHERE id=:id";
+    $sql = "SELECT * FROM articles WHERE id_articles=:id_articles";
     $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->bindParam(':id_articles', $id, PDO::PARAM_INT);
     $stmt->execute();
     return $stmt->fetch();
 }
