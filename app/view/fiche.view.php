@@ -1,5 +1,5 @@
 <main class="trombi">
-    <h1>Trombinoscope</h1>
+    <h1>Notre équipe</h1>
     <div class="student">
         <figure class="photo">
             <img src="public/images/big/<?php echo $data["equipe"]["Images"] ?>" alt="photo de <?php echo $data["equipe"]["Prenom"] ?>" />

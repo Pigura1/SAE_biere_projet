@@ -1,5 +1,5 @@
 <main class="trombi">
-  <h1>Trombinoscope</h1>
+  <h1>Notre équipe</h1>
   <form>
     <input type="hidden" name="route" value="search" />
     <input
