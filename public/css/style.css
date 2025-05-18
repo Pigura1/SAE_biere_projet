@@ -239,6 +239,7 @@ nav a img:hover {
 
 footer {
   /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   border-top: 2.5px solid #0ff;
   color: white;
   padding: 30px 20px;
@@ -282,7 +283,9 @@ footer {
 
 .biere-card {
     width: 250px;
+
     background-color: #3E4960;
+    
     overflow: hidden;
     box-shadow: 0 0 10px #3E4960;
     font-family: 'Orbitron', sans-serif;
