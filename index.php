@@ -26,7 +26,10 @@ switch ($route) {
             require_once 'app/controller/contact.controller.php';
             generateContactPage();
             break;
-                
+    case 'search':
+        require_once 'app/controller/recherche.controller.php';
+        generateSearchPage();
+        break;            
     case 'student':
         require_once 'app/controller/trombi.controller.php';
         generateStudentPage();
