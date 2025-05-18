@@ -11,21 +11,63 @@ body {
   color: white;
   line-height: 1.6;
 }
-
+h1{
+  text-align: center;
+}
 /* Images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+/* Trombinoscope */
+.student .photo{
+  max-width: 50%;
+  text-align: center;
+}
 
+.student-cards {
+  padding: 2rem;
+  max-width: 72rem;
+  margin: auto;
+}
+.student-card{
+  display: inline-block;
+  width: 13rem;
+  height: 23rem;
+  background-color: #00ffff; /* Voir avis des autres pour la couleur */
+  margin: 1.5rem;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+}
+.student-card a{
+  text-decoration: none;
+}
 
+/* Pages seule */
+.student-infos {
+  display: inline-block;
+  width: min(50%, 600px);
+  margin-right: 2rem;
+  margin-left: 4rem;
+  font-size: 2rem;
+  vertical-align: top;
+  text-align: center;
+}
+.studentimg .photo {
+  display: inline-block;
+  width: min(40%, 400px);
+  margin-left: 2rem;
+}
 
-
-
-
-
-
+/* Recherche */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
 
 
 /* Header */
