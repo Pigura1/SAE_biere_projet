@@ -21,20 +21,18 @@ img {
   display: block;
 }
 /* Trombinoscope */
-.student .photo{
-  max-width: 50%;
-  text-align: center;
-}
+
 
 .student-cards {
   padding: 2rem;
   max-width: 72rem;
   margin: auto;
 }
+
 .student-card{
   display: inline-block;
   width: 13rem;
-  height: 23rem;
+  height: 28rem;
   background-color: #00ffff; /* Voir avis des autres pour la couleur */
   margin: 1.5rem;
   text-align: center;
