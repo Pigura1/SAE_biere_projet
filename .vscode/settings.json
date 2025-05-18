@@ -1,0 +1,39 @@
+{
+  "background.editor": {
+    "style": {
+      "opacity": 0.1,
+      "background-size": "cover",
+      "background-postion": "center"
+    },
+    "styles": [
+      {},
+      {},
+      {}
+    ],
+    "images": [
+      "file:///C:/Users/emmal/Documents/sao/saowallpaper.png"
+    ],
+    "interval": 0,
+    "random": false
+  },
+  "background.sidebar": {
+    "images": [
+      "file:///C:/Users/emmal/Documents/sao/saowallpaper.png"
+    ],
+    "interval": 0,
+    "opacity": 0.20,
+    "position": "center",
+    "random": false,
+    "size": "cover"
+  },
+  "background.panel": {
+    "images": [
+      "file:///C:/Users/emmal/Documents/sao/saowallpaper.png"
+    ],
+    "interval": 0,
+    "opacity": 0.1,
+    "position": "top",
+    "random": false,
+    "size": "cover"
+  }
+}

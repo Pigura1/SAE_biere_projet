@@ -1,13 +1,10 @@
-<?php 
-/*
-    Layout composé d'un header, d'une partie centrale (contenu) et d'un footer
-*/
-
-// Affichage du header
+<?php
+// Inclure le header (avec le menu)
 include 'app/view/common/header.php';
 
-//Affichage de la vue
+// Afficher le contenu dynamique de la page
 echo $content;
 
-//Affichage du footer
+// Inclure le footer
 include 'app/view/common/footer.php';
+?>

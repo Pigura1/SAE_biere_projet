@@ -1,19 +1,243 @@
-*
- {
+/* Reset */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-nav ul li{
-    display:flex;
-    
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  line-height: 1.6;
 }
 
-img{
-  width:100px; /* modifier taille image */
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+
+
+
+
+
+
+
+
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  /* background: linear-gradient(135deg, #342221, #48292D, #663643, #723A49, #753B4B, #342221);
+  */  padding:  0 0 20px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  border-bottom: 2.5px solid #0ff;
+  height: 100px;
+}
+
+
+
+
+
+
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+
+
+
+nav li {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+nav a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Pseudo-éléments pour l'effet glitch */
+nav a::before,
+nav a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #00ffff;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Clipping pour glitch */
+nav a:hover::before {
+  animation: glitchTop 0.3s infinite linear;
+  clip: rect(0, 9999px, 1em, 0);
+  opacity: 1;
+}
+
+nav a:hover::after {
+  animation: glitchBottom 0.3s infinite linear;
+  clip: rect(1em, 9999px, 2em, 0);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Animations glitch */
+@keyframes glitchTop {
+  0%   { transform: translate(0); }
+  20%  { transform: translate(-2px, -2px); }
+  40%  { transform: translate(2px, -1px); }
+  60%  { transform: translate(-1px, 2px); }
+  80%  { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitchBottom {
+  0%   { transform: translate(0); }
+  20%  { transform: translate(2px, 2px); }
+  40%  { transform: translate(-2px, 1px); }
+  60%  { transform: translate(1px, -2px); }
+  80%  { transform: translate(-1px, 1px); }
+  100% { transform: translate(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav a img {
+  height:  70px;         /* Taille un peu plus visible que 40px, tu peux ajuster */
+  width: auto;            /* Largeur automatique pour garder proportions */
+  object-fit: contain;    /* Pas d'aplatissement, l'image garde ses proportions */
+  transition: transform 0.3s ease-in-out;;
+}
+
+
+ 
+
+
+nav a img:hover {
+  transform: scale(1.2); /* Zoom sur l'image au survol */
+}
+
+
+
+
+
+
+
+
+/* Bouton connexion */
+.btn-login {
+  border: 1px solid #00ffff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+
+
+footer {
+  /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
+  border-top: 2.5px solid #0ff;
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 0 -5px 20px rgba(0, 255, 255, 0.2);
+}
+
+.footer-content h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+
+
+
+
+
+
+
+
+.footer-content p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
