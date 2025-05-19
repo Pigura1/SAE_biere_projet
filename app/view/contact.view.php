@@ -29,8 +29,8 @@
   
 
 <div class="newsletter">
-    <p>Rejoignez Notre Newsletter Pour Recevoir Toutes Nos Actualités 
-        Et Offres Spéciales Directement Dans Votre Boîte Mail!</p>
+    <p>Rejoignez notre newsletter pour recevoir toutes nos actualités 
+        et offres spéciales directement dans votre boîte mail!</p>
 
         <form action="subscribe.php" method="post">
             <input type="email" name="email" placeholder="Votre Email" required>
@@ -66,3 +66,5 @@
     }
   </script>
   </div>
+
+  </main>
