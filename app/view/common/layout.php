@@ -8,3 +8,4 @@ echo $content;
 // Inclure le footer
 include 'app/view/common/footer.php';
 ?>
+
