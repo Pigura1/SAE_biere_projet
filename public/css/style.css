@@ -7,10 +7,14 @@
 
 body {
   font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background: #0f0c29; /* Couleur unie au lieu du dégradé */
   color: white;
   line-height: 2;
+  min-height: 100vh; /* Garantit que le fond couvre toute la hauteur */
+  margin: 0;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
 }
+
 h1{
   text-align: center;
 }
@@ -76,6 +80,7 @@ header {
   box-shadow: 20px rgba(0, 255, 255, 0.2);
   border-bottom: 2.5px solid #0ff;
   height: 130px;
+  
 }
 
 
@@ -92,6 +97,7 @@ nav ul {
   justify-content: space-around;
   width: 90%;
   margin: 10px;
+  position: fixed;
 }
 
 
@@ -216,19 +222,71 @@ nav a img:hover {
 
 /* Bouton connexion */
 .btn-login {
-  border: 1px solid #00ffff;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    border: 1px solid #00ffff;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #ffffff;
 }
 
 .btn-login:hover {
+    background-color: #00ffff;
+    color: #000;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+
+
+
+
+
+.button-access {
+  border: 1px solid #00ffff;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #00ffff;
+}
+
+.button-access:hover {
   background-color: #00ffff;
   color: #000;
   box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
 }
 
 
+
+
+/* Ajoutez ces styles pour une meilleure présentation */
+.login-container {
+    max-width: 300px;
+    margin: 50px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px 0;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #00ffff;
+    color: white;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
 
 
 
@@ -359,15 +417,6 @@ footer {
 
 
 
-body {
-    font-family: 'Rajdhani', sans-serif;
-    background-color: var(--dark-bg);
-    color: white;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0;
-}
 
 
 
@@ -386,30 +435,50 @@ body {
     border-radius: 8px;
     border: 2px solid var(--neon-blue);
     box-shadow: 0 0 10px var(--neon-blue), inset 0 0 10px var(--neon-blue);
-    width: 300px;
 }
 
 .login-container h2 {
     text-align: center;
+    display: block;
     color: var(--neon-pink);
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 5px var(--neon-pink);
-    margin-bottom: 20px;
+    
+   
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 
-.form-group label {
+
+
+
+
+
+
+
+
+
+.form-group1 label {
     display: block;
     margin-bottom: 5px;
     color: var(--neon-blue);
     text-shadow: 0 0 5px var(--neon-blue);
 }
 
-.form-group input {
-    
+.form-group2 label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 5px var(--neon-blue);
+}
+
+
+
+.form-group1 input,
+.form-group2 input {
+
     padding: 8px;
     border: 1px solid var(--neon-blue);
     border-radius: 4px;
@@ -417,6 +486,12 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
 }
+
+.input #password {
+  display: block;
+}
+
+
 
 .form-group button {
     background-color: var(--neon-pink);
@@ -430,6 +505,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
+
 
 .form-group button:hover {
     background-color: #ff598f;
@@ -460,20 +536,8 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* sources :  code réalisé par Matt Gross sur Codepen.io*/
+
 
 
 
