@@ -74,8 +74,10 @@ form {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  /* background: linear-gradient(135deg, #342221, #48292D, #663643, #723A49, #753B4B, #342221);*/ 
+  
+  /* background: linear-gradient(135deg, #342221, #48292D, #663643, #723A49, #753B4B, #342221); couleur dégradé rose cyb3r heaven*/ 
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */couleur violette degradé*/
+  /* background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64); couleur bleu degradé*/
   padding:  0 0 20px rgba(0, 255, 255, 0.2);
   box-shadow: 20px rgba(0, 255, 255, 0.2);
   border-bottom: 2.5px solid #0ff;
@@ -343,8 +345,8 @@ footer {
 .biere-card {
     width: 250px;
 
-    background-color: #3E4960;
-    
+    background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64);
+
     overflow: hidden;
     box-shadow: 0 0 10px #3E4960;
     font-family: 'Orbitron', sans-serif;
