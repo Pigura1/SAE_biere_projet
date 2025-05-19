@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="public/css/style.css?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" href="public/images/logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/view/common/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <title>Cyb3r Heaven</title>
 </head>
@@ -26,3 +27,5 @@
   </ul>
 </nav>
 </header>
+
+
