@@ -7,10 +7,11 @@
 
 body {
   font-family: 'Orbitron', sans-serif;
-  background: #0f0c29; /* Couleur unie au lieu du dégradé */
+  background: #141b2c;
+  
   color: white;
-  line-height: 2;
-  min-height: 100vh; /* Garantit que le fond couvre toute la hauteur */
+ 
+ 
   margin: 0;
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
@@ -76,9 +77,9 @@ form {
 header {
   
   /* background: linear-gradient(135deg, #342221, #48292D, #663643, #723A49, #753B4B, #342221); couleur dégradé rose cyb3r heaven*/ 
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */couleur violette degradé*/
+  background: #1e2a43; /* couleur violette degradé */
   /* background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64); couleur bleu degradé*/
-  padding:  0 0 20px rgba(0, 255, 255, 0.2);
+  padding: 0 0 20px 0;
   box-shadow: 20px rgba(0, 255, 255, 0.2);
   border-bottom: 2.5px solid #0ff;
   height: 130px;
@@ -300,7 +301,9 @@ input[type="password"] {
 
 footer {
   /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+   /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);  */
+     /* background: linear-gradient(135deg, #2A3A54, #3A4B64, #485E7A, #3A4B64, #2A3A54);*/
+   background: #1e2a43;
   border-top: 2.5px solid #0ff;
   color: white;
   padding: 30px 20px;

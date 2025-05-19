@@ -1,4 +1,4 @@
-<h1>Nos Bières</h1>
+<h1>Nos Cybeers</h1>
 <div class="bieres-container">
     <?php foreach ($bieres as $biere): ?>
         <div class="biere-card">
