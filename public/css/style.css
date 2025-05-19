@@ -740,7 +740,17 @@ footer {
 
 /* fin code de l'artiste crédité*/
 
-/* css de la newsletter page contact*/
+/* css de la page contact*/
+/** css page contact general*/
+.contact {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;  /* centre horizontalement */
+  align-items: center;
+  
+}
+/** css newsletter*/
 .newsletter {
     background: linear-gradient(145deg, #1a1a1a, #111);
     padding: 2rem;
