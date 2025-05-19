@@ -75,7 +75,7 @@ header {
   padding:  0 0 20px rgba(0, 255, 255, 0.2);
   box-shadow: 20px rgba(0, 255, 255, 0.2);
   border-bottom: 2.5px solid #0ff;
-  height: 120px;
+  height: 125px;
 }
 
 
@@ -90,7 +90,8 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
+  margin: 10px;
 }
 
 
@@ -192,10 +193,10 @@ nav a:hover::after {
 
 
 nav a img {
-  height:  70px;         /* Taille un peu plus visible que 40px, tu peux ajuster */
-  width: auto;            /* Largeur automatique pour garder proportions */
+  height:  100px;         /* Taille un peu plus visible que 40px, tu peux ajuster */
+          /* Largeur automatique pour garder proportions */
   object-fit: contain;    /* Pas d'aplatissement, l'image garde ses proportions */
-  transition: transform 0.3s ease-in-out;;
+  transition: transform 0.3s ease-in-out;
 }
 
 
@@ -203,7 +204,7 @@ nav a img {
 
 
 nav a img:hover {
-  transform: scale(1.2); /* Zoom sur l'image au survol */
+  transform-style: preserve-3d;;/
 }
 
 
