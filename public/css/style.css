@@ -75,7 +75,7 @@ header {
   padding:  0 0 20px rgba(0, 255, 255, 0.2);
   box-shadow: 20px rgba(0, 255, 255, 0.2);
   border-bottom: 2.5px solid #0ff;
-  height: 100px;
+  height: 120px;
 }
 
 
@@ -278,7 +278,7 @@ footer {
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    background-color: #1e1b3a; /* fond général */
+   
 }
 
 .biere-card {
