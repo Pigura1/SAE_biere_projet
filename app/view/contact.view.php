@@ -8,10 +8,10 @@
 <div class="instagram">
     <p>Sur Notre Compte Instagram</p>
 <div id="instaimg">
-    <a href="https://www.instagram.com/cyb3r_heaven?igsh=OHRkc2x5cDJqa3Zm&utm_source=qr"><img src="qrcodeinsta.jpeg" 
+    <a href="https://www.instagram.com/cyb3r_heaven?igsh=OHRkc2x5cDJqa3Zm&utm_source=qr"><img src="public/images/qrcode.png" 
     alt="qrcodeinstagram" 
     style="width:40px;height:40px;"></a>
-//qr code insta
+
 </div>
 </div>
 
@@ -20,8 +20,8 @@
 <div class="Youtube">
     <p>Sur Notre Chaine YouTube</p>
 <div id="youtubeimg">
-    <a href=""><img src="x" alt="youtubeimg" style=""></a>
-    //img banner clickable
+    <a href=""><img src="public/images/Youtube_logo.png" alt="youtubeimg" style=""></a>
+    
 </div>
 </div>
 
