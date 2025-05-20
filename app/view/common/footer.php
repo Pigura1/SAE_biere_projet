@@ -7,12 +7,10 @@
             <p>Université Paris-Est Créteil (UPEC), Bâtiment H</p>
             <p>240 Rue de la Motte, 77550 Moissy-Cramayel, France</p>
             <div class="footer-socials">
-<<<<<<< HEAD
-                <a href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"
-                 style="width:80px;height:55px"></a>
+
+                < href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a>
                 <a href="#"><img src="public/images/instagramicone.png" alt="Instagram"
-                 style="width:60px;height:60px"></a>
-=======
+                 ></a>
             
             </div>
             <p>&copy; <?= date("Y") ?> Cyb3r Heaven - Tous droits réservés</p>
