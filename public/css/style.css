@@ -76,7 +76,8 @@ form {
 /* Header */
 header {
    padding: 0 0 20px 0;
-   height: 140px;
+   height: 170px;
+   grid-row: 1 / 2;
   /* background: linear-gradient(135deg, #342221, #48292D, #663643, #723A49, #753B4B, #342221); couleur dégradé rose cyb3r heaven*/ 
   
   /* background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64); couleur bleu degradé*/
@@ -309,6 +310,7 @@ footer {
   color: white;
   padding: 30px 20px;
   box-shadow: 0 -5px 20px rgba(0, 255, 255, 0.2);
+  grid-row: 3 / 4;
 }
 
 .footer-content h3 {
@@ -1097,3 +1099,11 @@ footer {
   transition: transform 0.3s ease;
 }
 
+* {
+  grid-template-rows: 0fr 0fr 0fr;
+}
+
+
+main {
+    grid-row: 2 / 3;
+}

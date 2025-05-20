@@ -1,4 +1,5 @@
-<h2 class="hero glitch layers" data-text="EXAMPLE">
+<main>
+    <h2 class="hero glitch layers" data-text="EXAMPLE">
   <span>Bienvenue sur le site officiel de Cyb3r Heaven !</span>
 </h2>
 
@@ -11,5 +12,5 @@
     </video>
   </div>
 </body>
-
+</main>
 

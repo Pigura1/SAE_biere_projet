@@ -1,9 +1,7 @@
 
-  
-<H1>Retrouvez-nous sur les Réseaux Sociaux</H1>
-
 
 <main class="contact">
+ <H1>Retrouvez-nous sur les Réseaux Sociaux</H1>
 
 <div class="instagram">
     <p>Sur Notre Compte Instagram</p>
