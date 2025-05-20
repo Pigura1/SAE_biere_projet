@@ -11,10 +11,12 @@
 
            
                <div class="footer-logo">
-                <a id="youtube" href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a>
+               <div><a id="youtube" href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a></div> 
 
-               <a id="instagram" href="#"><img src="public/images/instagramicone.png" alt="Instagram"
+               <div><a id="instagram" href="#"><img src="public/images/instagramicone.png" alt="Instagram"
                  ></a></div> 
+                
+                </div>
             
 
 

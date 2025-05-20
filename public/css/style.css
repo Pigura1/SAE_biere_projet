@@ -320,13 +320,16 @@ footer {
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
 }
 
-
-
-
-
-
-
-
+.footer-socials {
+  display: flex;
+  gap: 10px; /* Espace entre les éléments */
+  align-items: center; /* Alignement vertical */
+  /*autre methodes*/
+  /*1== display: inline-block;
+  margin-right: 10px;*/
+  /*2== justify-content: space-between;
+  justify-content: flex-end;   /* à droite */
+}
 
 .footer-content p {
   font-family: 'Orbitron', sans-serif;
