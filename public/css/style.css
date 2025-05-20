@@ -98,7 +98,7 @@ nav ul {
   background: #1e2a43;
   border-bottom: 2.5px solid #0ff;
   box-shadow: 20px rgba(0, 255, 255, 0.2);
-  
+  z-index: 9999999;
 }
 
 
