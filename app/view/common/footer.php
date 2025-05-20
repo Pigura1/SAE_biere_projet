@@ -10,7 +10,7 @@
 
 
             <div class="logo-footer">
-                < href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a>
+                <a href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a>
                 <a href="#"><img src="public/images/instagramicone.png" alt="Instagram"
                  ></a></div>
             
