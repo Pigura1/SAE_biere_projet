@@ -10,9 +10,11 @@
 
 
            
-                <a class="youtube" href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a>
-                <a class="instagram" href="#"><img src="public/images/instagramicone.png" alt="Instagram"
-                 ></a>
+               <div class="youtube"><a href="#"><img src="public/images/Youtube_logo.png" alt="Youtube"></a></div>
+
+               
+               <div class="instagram"><a href="#"><img src="public/images/instagramicone.png" alt="Instagram"
+                 ></a></div> 
             
 
 
