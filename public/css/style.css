@@ -75,18 +75,12 @@ form {
 
 /* Header */
 header {
-  
+   padding: 0 0 20px 0;
+   height: 140px;
   /* background: linear-gradient(135deg, #342221, #48292D, #663643, #723A49, #753B4B, #342221); couleur dégradé rose cyb3r heaven*/ 
-  background: #1e2a43;
-  /* background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64); couleur bleu degradé*/
-  padding: 0 0 20px 0;
-  box-shadow: 20px rgba(0, 255, 255, 0.2);
-  border-bottom: 2.5px solid #0ff;
-  height: 130px;
   
+  /* background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64); couleur bleu degradé*/
 }
-
-
 
 
 
@@ -98,9 +92,12 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 90%;
-  margin: 5px;
+  width: 100%;
   position: fixed;
+  background: #1e2a43;
+  border-bottom: 2.5px solid #0ff;
+  box-shadow: 20px rgba(0, 255, 255, 0.2);
+  
 }
 
 
@@ -183,6 +180,7 @@ nav a:hover::after {
   100% { transform: translate(0); }
 }
 
+
 @keyframes glitchBottom {
   0%   { transform: translate(0); }
   20%  { transform: translate(2px, 2px); }
@@ -204,10 +202,11 @@ nav a:hover::after {
 
 
 nav a img {
-  height:  100px;         /* Taille un peu plus visible que 40px, tu peux ajuster */
+  height:  125px;         /* Taille un peu plus visible que 40px, tu peux ajuster */
           /* Largeur automatique pour garder proportions */
   object-fit: contain;    /* Pas d'aplatissement, l'image garde ses proportions */
   transition: transform 0.6s ease-in-out;
+
 }
 
 
@@ -215,7 +214,7 @@ nav a img {
 
 
 nav a img:hover {
-  transform: scale(1.2); /* Zoom sur l'image au survol */
+  transform: scale(0.8); /* Zoom sur l'image au survol */
 }
 
 
