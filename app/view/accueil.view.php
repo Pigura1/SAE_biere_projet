@@ -3,6 +3,10 @@
 </h2>
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 <body>
   <div class="video-container">
     <video class="video" controls>
