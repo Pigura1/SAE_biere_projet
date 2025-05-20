@@ -1046,14 +1046,15 @@ footer {
   object-fit: cover; /* Ajuste la vidéo sans la déformer */
 }
 
- #youtube {
-  display: flex; 
-  max-width: 80%;
-  width: 300px;
+.footer-socials {
+  display: flex;
+  gap: 20px; /* Espace entre les icônes */
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
-#instagram {
-  display: flex;          
-  max-width: 80%;
-  width: 300px;
+.footer-socials img {
+  height: 30px; /* Ajustez la taille de l'icône */
+  transition: transform 0.3s ease;
 }
+
