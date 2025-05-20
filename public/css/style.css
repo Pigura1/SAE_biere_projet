@@ -567,11 +567,8 @@ footer {
   font-size: clamp(40px, 10vw, 100px);
   line-height: 1;
   display: inline-block;
-<<<<<<< Updated upstream
   color: #88ffff;
-=======
   color:#94ffff;
->>>>>>> Stashed changes
   z-index: 2;
   letter-spacing: 8px;
 
