@@ -14,3 +14,5 @@ function generateProductPage() {
     generatePage($data); 
 }
 ?>
+
+

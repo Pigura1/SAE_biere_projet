@@ -8,9 +8,11 @@
                     <?php if (!empty($biere['image'])): ?>
                         <img src="public/images/small/<?= htmlspecialchars((string)$biere['image']) ?>" alt="photo de <?= htmlspecialchars((string)($biere['nom'] ?? 'Bière')) ?>" />
                     <?php else: ?>
-                        <img src="public/images/placeholder.jpg" alt="image non disponible" />
+                        <img src="public/images/small/bouteille_cybeer1.png"/>
                     <?php endif; ?>
                 </figure>
+
+                
                 <div class="biere-infos">
                     <p class="biere-nom"><?= isset($biere["nom"]) ? htmlspecialchars((string)$biere["nom"]) : 'Nom inconnu' ?></p>
                     <p class="biere-prix">Prix : <span><?= isset($biere["prix"]) ? htmlspecialchars((string)$biere["prix"]) . " €" : 'Non indiqué' ?></span></p>
