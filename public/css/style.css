@@ -66,7 +66,7 @@ img {
 
 /* Recherche */
 form {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1.5rem;
@@ -211,7 +211,7 @@ nav a img {
 }
 
 
- 
+
 
 
 nav a img:hover {
@@ -497,7 +497,8 @@ footer {
 
 .login-container {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 100px;
+    padding: 50px;
+    margin: 50px auto;
     border-radius: 8px;
     border: 2px solid var(--neon-blue);
     box-shadow: 0 0 10px var(--neon-blue), inset 0 0 10px var(--neon-blue);
@@ -513,7 +514,7 @@ footer {
    
 }
 
-.form-group {
+.form-group  {
     margin-bottom: 50px;
 }
 
@@ -531,6 +532,7 @@ footer {
     margin-bottom: 5px;
     color: var(--neon-blue);
     text-shadow: 0 0 5px var(--neon-blue);
+    padding: 15px;
 }
 
 .form-group2 label {
@@ -538,6 +540,7 @@ footer {
     margin-bottom: 5px;
     color: var(--neon-blue);
     text-shadow: 0 0 5px var(--neon-blue);
+    padding: 15px;
 }
 
 
@@ -570,8 +573,12 @@ footer {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    padding: 15px;
 }
 
+.form-group {
+  margin: 15px;
+}
 
 .form-group button:hover {
     background-color: #ff598f;
