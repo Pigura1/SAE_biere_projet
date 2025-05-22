@@ -1,13 +1,13 @@
 <?php
 
 /** The name of the database for our website */
-define( 'DB_NAME', 'cdce5547_2025_cyb3rheaven' );
+define( 'DB_NAME', 'biere_base_de_donnee' );
 
 /** Database username */
-define( 'DB_USER', 'cdce5547_admin_sql_cyb3rheaven' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'MMI4ever@BDD' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
