@@ -1,6 +1,10 @@
 <main> 
     <h1>Nos Cybeers</h1>
 <div class="bieres-container">
+
+
+
+
     <?php foreach ($bieres as $biere): ?>
         <div class="biere-card">
             <a href="?route=fiche_biere&id_biere=<?= isset($biere["id_biere"]) ? htmlspecialchars((string)$biere["id_biere"]) : '#' ?>">
