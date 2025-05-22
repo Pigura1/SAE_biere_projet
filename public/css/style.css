@@ -996,7 +996,6 @@ footer {
   height: 100vh;
   margin: 0;
   display: flex;
-  justify-content: center;  /* centre horizontalement */
   align-items: center;
   
 }
