@@ -1,15 +1,23 @@
  <?php
+require_once 'app/model/model.php';
 
+function getAllBieres() : array {
+    
 
-function getAllBieres() {
-    return [
-        ["nom" => "Bière Blanche", "prix" => "3.50", "description" => "Bière originale à l'hibiscus et au rooibos."],
-        ["nom" => "Bière Blonde", "prix" => "3.50", "description" => "Bière à l'hibiscus et au citron vert."],
-        ["nom" => "Bière Brune", "prix" => "3.50", "description" => "Bière à l'hibiscus et à la myrtille."],
-        ["nom" => "Bière Ambrée", "prix" => "3.50", "description" => "Bière à ...."],
-        ["nom" => "Bière Rousse", "prix" => "3.50", "description" => "Bière à l'hibiscus et à la mangue."],
-        ["nom" => "Bière Stout", "prix" => "4.80", "description" => "Edition limitée : Bière à l'hibiscus et à la cerise."]
-    ];
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT * FROM articles");
+    $stmt->execute();
+    return $stmt->fetchAll();
 }
+
+function getBiereById(int $id): array
+{
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT * FROM articles WHERE id_articles=:id_articles");
+    $stmt->bindParam(':id_articles', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetch();
+}
+
 ?>
 

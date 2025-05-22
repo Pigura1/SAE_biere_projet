@@ -5,27 +5,21 @@
 
 
 
-    <?php foreach ($bieres as $biere): ?>
+    <?php foreach ($articles as $biere): ?>
         <div class="biere-card">
-            <a href="?route=fiche_biere&id_biere=<?= isset($biere["id_biere"]) ? htmlspecialchars((string)$biere["id_biere"]) : '#' ?>">
-                <figure class="biere-photo">
-                    <?php if (!empty($biere['image'])): ?>
-                        <img src="public/images/small/<?= htmlspecialchars((string)$biere['image']) ?>" alt="photo de <?= htmlspecialchars((string)($biere['nom'] ?? 'Bière')) ?>" />
-                    <?php else: ?>
-                        <img src="public/images/small/bouteille_cybeer1.png"/>
-                    <?php endif; ?>
+            <a href="?route=fiche_biere&id_articles=<?php echo $biere["id_articles"]  ?>">
+                <figure class="biere-photo">    
+                        <img src="public/images/small/<?php echo $biere['Images'] ?>" alt="photo de <?php echo $biere['Nom']   ?>" />     
                 </figure>
-
-                
                 <div class="biere-infos">
-                    <p class="biere-nom"><?= isset($biere["nom"]) ? htmlspecialchars((string)$biere["nom"]) : 'Nom inconnu' ?></p>
-                    <p class="biere-prix">Prix : <span><?= isset($biere["prix"]) ? htmlspecialchars((string)$biere["prix"]) . " €" : 'Non indiqué' ?></span></p>
+                    <p class="biere-nom"><?php echo $biere["Nom"]   ?></p>
+                    <p class="biere-prix">Prix : <span><?php echo$biere["Prix"]  ?> €</span></p>
 
                     <?php if (!empty($biere["type"])): ?>
                         <p class="biere-type">Type : <span><?= htmlspecialchars((string)$biere["type"]) ?></span></p>
                     <?php endif; ?>
 
-                    <p class="biere-desc"><?= !empty($biere["description"]) ? htmlspecialchars((string)$biere["description"]) : 'Pas de description.' ?></p>
+                    <p class="biere-desc"><?php  echo$biere["Description"]  ?></p>
                 </div>
             </a>
         </div>
