@@ -14,3 +14,5 @@
 </body>
 </main>
 
+
+<a href="index.php?route=produit" class="buy-button">Acheter maintenant</a>

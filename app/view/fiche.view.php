@@ -1,3 +1,7 @@
+
+
+
+
 <main class="trombi">
     <h1>Notre équipe</h1>
     <div class="studentimg">

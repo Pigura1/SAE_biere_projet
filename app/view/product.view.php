@@ -1,5 +1,8 @@
 <main> 
-    <h1>Nos Cybeers</h1>
+    <br></br>
+   <h1 class="header__title">Vivez l'expérience ultime de Cyb3r Heaven avec nos CYBEERS</h1>
+   <br></br>
+   
 <div class="bieres-container">
 
 

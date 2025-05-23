@@ -13,19 +13,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <title>Cyb3r Heaven</title>
 </head>
+
+
+
+
+
+
+
+
 <body>
-  <header>
+ <header>
+  <button class="menu-toggle">☰</button>
+
  <nav>
   <ul>
+     
+     <li><a href="index.php?route=home"><img src="public/images/logo.png" alt="Accueil" /></a></li>
     <li><a href="index.php?route=produit" data-text="PRODUITS">Produits</a></li>
     <li><a href="index.php?route=trombinoscope" data-text="À PROPOS">À propos</a></li>
     <li><a href="#" data-text="BRASSAGE">Brassage</a></li>
-    <li><a href="index.php?route=home"><img src="public/images/logo.png" alt="Accueil" /></a></li>
     <li><a href="index.php?route=contact" data-text="NOUS CONTACTER">Nous contacter</a></li>
     <li><a href="index.php?route=achat" data-text="ACHAT">Achat</a></li>
     <li><a class="btn-login" href="index.php?route=compte">Compte</a></li>
   </ul>
 </nav>
+ 
+
+  <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <button class="close-mobile">✖</button>
+     <img src="public/images/small/logo.png" alt="Logo" class="h-12 mb-6" />
+    <a href="index.php?route=produit">Produits</a>
+    <a href="index.php?route=trombinoscope">À propos</a>
+    <a href="#">Brassage</a>
+    <a href="index.php?route=contact">Nous contacter</a>
+    <a href="index.php?route=achat">Achat</a>
+    <a href="index.php?route=compte" class="btn-login">Compte</a>
+  </div>
 </header>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navList = document.querySelector('nav ul');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-mobile');
+
+  toggleBtn.addEventListener('click', () => {
+    navList.style.display = 'none';
+    mobileMenu.style.display = 'flex';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    navList.style.display = 'flex';
+    mobileMenu.style.display = 'none';
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+  <div class="menu-toggle menu-toggle--open">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="menu-close">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+
+
+
+  
+  <pmx-group id="pmx-home"></pmx-group>
+  <div class="header__content">
+        <div class="header__inner">
+      <div class="header__bottom">
+ 
 
 
