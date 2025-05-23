@@ -20,6 +20,14 @@ body {
   padding: 0 25px;
 }
 
+#slides {
+      animation: slideAnimation 40s infinite;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
 h1{
   text-align: center;
 }
