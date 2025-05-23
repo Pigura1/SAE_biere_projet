@@ -16,6 +16,10 @@ body {
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
+.hero {
+  padding: 0 25px;
+}
+
 h1{
   text-align: center;
 }
@@ -393,7 +397,7 @@ footer {
 
 /*CSS autre*/
 
-/* footer {
+footer {
   padding: 40px 20px;
   text-align: center;
 }
@@ -420,7 +424,7 @@ footer {
 }
 
 .footer-logo a img {
-  width: 32px; /* Ajuste selon la taille voulue 
+  width: 32px; /* Ajuste selon la taille voulue */
   height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -429,8 +433,35 @@ footer {
 .footer-logo a img:hover {
   transform: scale(1.1);
 }
-*/
 
+#txtdefilant {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; /* Largeur du conteneur */
+    font-size: 18px;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+/* Animation du texte défilant */
+
+#txtdefilant {
+    animation: scroll-left 20s linear infinite;
+
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
 

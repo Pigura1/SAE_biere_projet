@@ -19,6 +19,7 @@
 
 
             </div>
+            <p id="txtdefilant">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
             <p>&copy; <?= date("Y") ?> Cyb3r Heaven - Tous droits réservés</p>
         </div>
     </footer>

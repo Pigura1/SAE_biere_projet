@@ -2,7 +2,28 @@
     <h2 class="hero glitch layers" data-text="EXAMPLE">
   <span>Bienvenue sur le site officiel de Cyb3r Heaven !</span>
 </h2>
+<section id="caroussel">
+  <div id="slides">
+    <div class="bière">
 
+    </div>
+     <div class="bière">
+      
+    </div>
+     <div class="bière">
+      
+    </div>
+     <div class="bière">
+      
+    </div>
+     <div class="bière">
+      
+    </div>
+     <div class="bière">
+      
+    </div>
+  </div>
+</section>
 
 <body>
   <div class="video-container">
