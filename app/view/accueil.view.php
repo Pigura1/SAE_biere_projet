@@ -24,28 +24,28 @@
         <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
           <h3>bière 3</h3>
-          <p>description<</p>
+          <p>description</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
         <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
           <h3>bière 4</h3>
-          <p>description<</p>
+          <p>description</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
         <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
           <h3>bière 5</h3>
-          <p>description<</p>
+          <p>description</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
         <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
           <h3>bière 6</h3>
-          <p>description<</p>
+          <p>description</p>
         </div>
       </div>
   </section>
