@@ -1,3 +1,4 @@
+
 <main> 
     <br></br>
    <h1 class="header__title">Vivez l'expérience ultime de Cyb3r Heaven avec nos CYBEERS</h1>
@@ -23,6 +24,7 @@
                     <?php endif; ?>
 
                     <p class="biere-desc"><?php  echo$biere["Description"]  ?></p>
+                    <a  class="buy-buttons">Acheter</a>
                 </div>
             </a>
         </div>

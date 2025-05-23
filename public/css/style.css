@@ -1267,7 +1267,21 @@ nav ul.desktop a {
   border: none;
   cursor: pointer;
 }
-
+/* Test Javascript*/
+.buy-buttons {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #facc15;
+  border-left: 8px solid #d97706;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgb(0, 255, 255);
+}
 /* ======= BOUTON FIXE ACHAT ======= */
 .buy-button {
   position: fixed;

@@ -44,6 +44,9 @@ switch ($route) {
     case 'fichebiere';
     require_once 'app/controller/fichebiere.controller.php';
     generateFichebierePage();
+    case 'achat';
+    require_once 'app/controller/achat.controller.php';
+    generateAchatPage();
     break;
     default:
         exit;
