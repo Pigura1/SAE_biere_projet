@@ -1207,6 +1207,25 @@ nav ul.desktop a {
   padding: 0.25rem 0.75rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Le bouton burger (mobile only) */
 .menu-toggle {
   display: none;
@@ -1215,8 +1234,25 @@ nav ul.desktop a {
   background: none;
   border: none;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ======= MENU MOBILE ======= */
 .mobile-menu {
@@ -1323,8 +1359,12 @@ nav ul.desktop a {
 
 
 
-.buy-button {
-  
-}
 
+
+
+
+  body {
+     cursor: url('public/images/curseurbon.png'), auto;
+    }
+  
 
