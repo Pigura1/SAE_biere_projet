@@ -1363,8 +1363,7 @@ nav ul.desktop a {
 
 
 
-  body {
-     cursor: url('public/images/curseurbon.png'), auto;
-    }
-  
+  * {
+    cursor: url('../images/small/curseurbleu.png'), pointer;
 
+  }
