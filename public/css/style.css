@@ -1229,10 +1229,11 @@ nav ul.desktop a {
   padding-top: 5rem;
   gap: 1.5rem;
   z-index: 100;
+  
 }
 
 .mobile-menu a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.25rem;
   text-decoration: none;
 }
