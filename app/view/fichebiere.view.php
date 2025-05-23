@@ -11,6 +11,12 @@
             <p class="desc">
                 <?php echo $data["fichebiere"]["Description"] ?>
             </p>
+            <form method="POST" action="ajout_biere.php">
+    <input type="hidden" name="id_articles" value="<?= $fichebiere['id_articles'] ?>">
+    <label for="quantite_<?= $biere['id_articles'] ?>">Quantité :</label>
+    <input type="number" name="quantite" id="quantite_<?= $fichebiere['id_articles'] ?>" value="1" min="1" required>
+    <button type="submit">Ajouter au panier</button>
+</form>
         </div>
     </div>
 </main>

@@ -26,6 +26,14 @@ function getMaxBiereId()
     $stmt->execute();
     return $stmt->fetch()["id_articles"];
 }
+function getSpecificBeers( $db, array $id): array {
+    if (empty($id)) return [];
+    $articles= implode(',', array_fill(0, count($id), '?'));
+    $sql = "SELECT * FROM articles WHERE id_articles IN ($articles)";
+    $stmt = $db->prepare($sql);
+    $stmt->execute($id);
+    return $stmt->fetchAll();
+}
 
 ?>
 
