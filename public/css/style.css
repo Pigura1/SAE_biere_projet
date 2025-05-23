@@ -1066,8 +1066,8 @@ footer {
   justify-content: center;
   align-items: center;     
   flex-direction: column;
-  
 }
+
 /** css newsletter*/
 .newsletter {
     background: linear-gradient(145deg, #1a1a1a, #111);
