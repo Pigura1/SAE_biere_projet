@@ -10,7 +10,7 @@
 
     <?php foreach ($articles as $biere): ?>
         <div class="biere-card">
-            <a href="?route=fiche_biere&id_articles=<?php echo $biere["id_articles"]  ?>">
+            <a href="?route=fichebiere&id_articles=<?php echo $biere["id_articles"]  ?>">
                 <figure class="biere-photo">    
                         <img src="public/images/small/<?php echo $biere['Images'] ?>" alt="photo de <?php echo $biere['Nom']   ?>" />     
                 </figure>
