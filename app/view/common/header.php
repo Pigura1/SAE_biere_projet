@@ -42,7 +42,7 @@
   <!-- Mobile Menu -->
     <div class="mobile-menu">
       <button class="close-mobile">✖</button>
-     <img src="public/images/small/logo.png" alt="Logo" class="h-12 mb-6" />
+     <a href="index.php?route=home"><img src="public/images/small/logo.png" alt="Logo" class="h" /></a>
     <a href="index.php?route=produit">Produits</a>
     <a href="index.php?route=trombinoscope">À propos</a>
     <a href="#">Brassage</a>
