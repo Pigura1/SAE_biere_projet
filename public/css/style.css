@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+   cursor: url('/public/images/curseur-neon-violet.png') 5 5,auto;
 }
 
 body {
@@ -12,6 +13,9 @@ body {
   color: white;
  
  
+
+
+
   margin: 0;
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
@@ -1175,7 +1179,6 @@ footer {
 main {
     grid-row: 2 / 3;
 }
-
 
 
 
