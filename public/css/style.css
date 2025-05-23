@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   cursor: url('/public/images/curseur-neon-violet.png') 5 5,auto;
 }
 
 body {
@@ -13,23 +12,8 @@ body {
   color: white;
  
  
-
-
-
   margin: 0;
   overflow-x: hidden; /* Empêche le défilement horizontal */
-}
-
-.hero {
-  padding: 0 25px;
-}
-
-#slides {
-      animation: slideAnimation 40s infinite;
-    transition: transform 0.5s ease-in-out;
-    display: flex;
-    margin-bottom: 5%;
-    align-items: center;
 }
 
 h1{
@@ -409,7 +393,7 @@ footer {
 
 /*CSS autre*/
 
-footer {
+/* footer {
   padding: 40px 20px;
   text-align: center;
 }
@@ -436,7 +420,7 @@ footer {
 }
 
 .footer-logo a img {
-  width: 32px; /* Ajuste selon la taille voulue */
+  width: 32px; /* Ajuste selon la taille voulue 
   height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -445,35 +429,9 @@ footer {
 .footer-logo a img:hover {
   transform: scale(1.1);
 }
+*/
 
-#txtdefilant {
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%; /* Largeur du conteneur */
-    font-size: 18px;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-weight: bold;
-    margin: 20px 0;
-    font-family: "Barlow Condensed", sans-serif;
-}
 
-/* Animation du texte défilant */
-
-#txtdefilant {
-    animation: scroll-left 20s linear infinite;
-
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
 .bieres-container {
@@ -1229,6 +1187,7 @@ main {
 
 
 
+
 /* ======= STYLES DESKTOP ======= */
 nav ul.desktop {
   display: flex;
@@ -1277,7 +1236,7 @@ nav ul.desktop a {
   cursor: pointer;
   padding-left: 3rem;
   padding-top: 3rem;
-
+  
 
 }
 
@@ -1329,7 +1288,12 @@ nav ul.desktop a {
 .mobile-menu img {
   margin: 0 auto;
   display: block;
+  transform: scale(3.8); /* 150% de la taille originale */
+ 
+ 
 }
+
+
 
 /* Bouton de fermeture du menu mobile */
 .close-mobile {
@@ -1342,21 +1306,7 @@ nav ul.desktop a {
   border: none;
   cursor: pointer;
 }
-/* Test Javascript*/
-.buy-buttons {
-  position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #facc15;
-  border-left: 8px solid #d97706;
-  color: black;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-shadow: 0 0 10px rgb(0, 255, 255);
-}
+
 /* ======= BOUTON FIXE ACHAT ======= */
 .buy-button {
   position: fixed;
@@ -1386,6 +1336,7 @@ nav ul.desktop a {
 
   .mobile-menu {
     display: none; /* reste caché jusqu'à ce qu'on clique */
+
   }
 }
 /* Garde le logo toujours visible */
@@ -1419,6 +1370,6 @@ nav ul.desktop a {
 
 
   * {
-    cursor: url('../images/small/curseurbleu.png'), pointer;
+    cursor: url('../images/small/curseurbleu.png'), auto;
 
   }
