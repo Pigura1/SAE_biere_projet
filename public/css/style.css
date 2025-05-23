@@ -20,6 +20,18 @@ body {
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
+.hero {
+  padding: 0 25px;
+}
+
+#slides {
+      animation: slideAnimation 40s infinite;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
 h1{
   text-align: center;
 }
@@ -397,7 +409,7 @@ footer {
 
 /*CSS autre*/
 
-/* footer {
+footer {
   padding: 40px 20px;
   text-align: center;
 }
@@ -424,7 +436,7 @@ footer {
 }
 
 .footer-logo a img {
-  width: 32px; /* Ajuste selon la taille voulue 
+  width: 32px; /* Ajuste selon la taille voulue */
   height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -433,9 +445,35 @@ footer {
 .footer-logo a img:hover {
   transform: scale(1.1);
 }
-*/
 
+#txtdefilant {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; /* Largeur du conteneur */
+    font-size: 18px;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: "Barlow Condensed", sans-serif;
+}
 
+/* Animation du texte défilant */
+
+#txtdefilant {
+    animation: scroll-left 20s linear infinite;
+
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
 .bieres-container {
@@ -1210,6 +1248,25 @@ nav ul.desktop a {
   padding: 0.25rem 0.75rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Le bouton burger (mobile only) */
 .menu-toggle {
   display: none;
@@ -1218,8 +1275,25 @@ nav ul.desktop a {
   background: none;
   border: none;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ======= MENU MOBILE ======= */
 .mobile-menu {
@@ -1237,10 +1311,11 @@ nav ul.desktop a {
   
   gap: 1.5rem;
   z-index: 100;
+  
 }
 
 .mobile-menu a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.25rem;
   text-decoration: none;
 }
@@ -1339,8 +1414,11 @@ nav ul.desktop a {
 
 
 
-.buy-button {
-  
-}
 
 
+
+
+  * {
+    cursor: url('../images/small/curseurbleu.png'), pointer;
+
+  }
