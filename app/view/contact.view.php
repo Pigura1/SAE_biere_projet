@@ -18,7 +18,7 @@
 <div class="Youtube">
     <p>Sur Notre Chaine YouTube</p>
 <div id="youtubeimg">
-    <a href=""><img src="public/images/Youtube_logo.png" alt="youtubeimg" 
+    <a href=""><img src="public/images/Youtubelogo.png" alt="youtubeimg" 
       style="width:86px;height:60px"></a>
     
 </div>
