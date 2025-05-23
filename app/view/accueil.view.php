@@ -3,49 +3,49 @@
     <span>Bienvenue sur le site officiel de Cyb3r Heaven !</span>
   </h2>
   ====== CAROUSSEL
-  
+
   <section id="caroussel">
     <div id="slides">
       <div class="bière" style="background-image: url();">
         <img src="" alt class="bières">
         <div class="description">
-          <h3>...</h3>
-          <p>loremipsum</p>
+          <h3>bière 1</h3>
+          <p>description</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
-        <img src="" alt class="bières">
+        <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
-          <h3>...</h3>
-          <p>loremipsum</p>
+          <h3>bière 2</h3>
+          <p>description</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
-        <img src="" alt class="bières">
+        <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
-          <h3>...</h3>
-          <p>loremipsum</p>
+          <h3>bière 3</h3>
+          <p>description<</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
-        <img src="" alt class="bières">
+        <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
-          <h3>...</h3>
-          <p>loremipsum</p>
+          <h3>bière 4</h3>
+          <p>description<</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
-        <img src="" alt class="bières">
+        <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
-          <h3>...</h3>
-          <p>loremipsum</p>
+          <h3>bière 5</h3>
+          <p>description<</p>
         </div>
       </div>
       <div class="bière" style="background-image: url();">
-        <img src="" alt class="bières">
+        <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
-          <h3>...</h3>
-          <p>loremipsum</p>
+          <h3>bière 6</h3>
+          <p>description<</p>
         </div>
       </div>
   </section>
