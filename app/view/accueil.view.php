@@ -5,7 +5,7 @@
   <section id="caroussel">
     <div id="slides">
       <div class="bière" style="background-image: url();">
-        <img src="" alt class="bières">
+        <img src="public/images/big/blonde.png" alt class="bières">
         <div class="description">
           <h3>bière 1</h3>
           <p>description</p>
