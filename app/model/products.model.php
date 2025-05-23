@@ -19,5 +19,13 @@ function getBiereById(int $id): array
     return $stmt->fetch();
 }
 
+function getMaxBiereId()
+{
+    $db = getDatabaseConnexion();
+    $stmt = $db->prepare("SELECT id_articles FROM articles ORDER BY id_articles DESC LIMIT 1");
+    $stmt->execute();
+    return $stmt->fetch()["id_articles"];
+}
+
 ?>
 
