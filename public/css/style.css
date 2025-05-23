@@ -141,8 +141,8 @@ nav ul li a {
   text-decoration: none;
   font-family: 'Orbitron', sans-serif;
   font-size: 1rem;
-  letter-spacing: 2px;
-  padding: 10px 15px;
+  letter-spacing: 1px;
+  padding: 5px 15px;
   transition: all 0.3s ease-in-out;
   position: relative;
   display: inline-block;
@@ -291,7 +291,7 @@ nav a img:hover {
 .btn-login:hover {
     background-color: #00ffff;
     color: #fffb00;
-    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    box-shadow: 0 0 5px #0ff, 0 0 20px #0ff;
 }
 
 
@@ -1346,7 +1346,7 @@ nav ul.desktop a {
 }
 
 /* Gère l'affichage responsive */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 635px) {
   /* Cache tout le nav sauf le logo */
   nav {
     display: none !important;
@@ -1373,3 +1373,7 @@ nav ul.desktop a {
     cursor: url('../images/small/curseurbleu.png'), auto;
 
   }
+
+a {
+  cursor: pointer;
+}
