@@ -1,7 +1,7 @@
 
 <main> 
     <br></br>
-   <h1 class="header__title">Vivez l'expérience ultime de Cyb3r Heaven avec nos CYBEERS</h1>
+   <h1 class="header__title">Vivez l'expérience unique de Cyb3r Heaven avec nos CYBEERS</h1>
    <br></br>
    
 <div class="bieres-container">
@@ -24,7 +24,7 @@
                     <?php endif; ?>
 
                     <p class="biere-desc"><?php  echo$biere["Description"]  ?></p>
-                    <a  class="buy-buttons">Acheter</a>
+                    <a href="index.php?route=fichebiere&id_articles=<?php echo $biere['id_articles'] ?>" class="buy-buttons">Voir le produit</a>
                 </div>
             </a>
         </div>

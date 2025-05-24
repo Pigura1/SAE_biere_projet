@@ -434,6 +434,16 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
 .bieres-container {
     display: flex;
     flex-wrap: wrap;
@@ -456,18 +466,40 @@ footer {
 }
 
 .biere-card:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .biere-card a {
     color: inherit;
     text-decoration: none;
     display: block;
+    cursor: default; /* Désactive le pointeur main partout */
 }
+
+
+.buy-buttons {
+    
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 234) !important;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px cyan;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer !important; /* Force le curseur main */
+    text-align: center;
+}
+
+.buy-buttons:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan, 0 0 25px cyan;
+}
+
 
 .biere-photo img {
     width: 100%;
-    height: 220px;
     object-fit: cover;
    
 }
@@ -487,6 +519,16 @@ footer {
 .biere-desc {
     margin: 0.3rem 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1187,7 +1229,6 @@ main {
 
 
 
-
 /* ======= STYLES DESKTOP ======= */
 nav ul.desktop {
   display: flex;
@@ -1377,3 +1418,105 @@ nav ul.desktop a {
 a {
   cursor: pointer;
 }
+
+
+
+
+
+.form-panier {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 15px cyan;
+    max-width: 300px;
+}
+
+.quantite-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantite-selector button {
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 8px cyan;
+}
+
+.quantite-selector button:hover {
+    background-color: cyan;
+    color: #000;
+    box-shadow: 0 0 12px cyan, 0 0 25px cyan;
+}
+
+.quantite-selector input[type="number"] {
+    width: 60px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 8px;
+    border: 2px solid cyan;
+    background-color: #101010;
+    color: cyan;
+    box-shadow: 0 0 8px cyan inset;
+}
+
+.btn-ajout {
+    background-color: transparent;
+    color: cyan;
+    border: 2px solid cyan;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px cyan;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.btn-ajout:hover {
+    background-color: cyan;
+    color: #000;
+    box-shadow: 0 0 15px cyan, 0 0 25px cyan;
+}
+
+.quantite-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantite-wrapper label {
+    color: cyan;
+    font-weight: bold;
+    font-size: 1rem;
+    min-width: 70px;
+}
+
+/* Supprimer les flèches sur Chrome, Safari, Edge, Opera */
+.quantite-selector input[type=number]::-webkit-outer-spin-button,
+.quantite-selector input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Supprimer les flèches sur Firefox */
+.quantite-selector input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
