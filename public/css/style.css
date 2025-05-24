@@ -1520,3 +1520,47 @@ a {
 }
 
 
+
+
+.SpeedLineArea {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  perspective: 200px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.SpeedLineChange {
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: Closiing 5s infinite linear;
+}
+
+@keyframes Closiing {
+  0% { transform: translate3d(0,0,-3000px); }
+  100% { transform: translate3d(0,0,200px); }
+}
+
+.SpeedLine {
+  width: 100px;
+  height: 10px;
+  background: linear-gradient(90deg, #00f, #0ff);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container {
+  position: relative;
+  z-index: 10;
+  background: rgba(0,0,0,0.8);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 60px auto;
+  color: white;
+box-shadow: 0 0 15px #0ff;
+/* reference du code : HD player sur codepen.io */
+}
+

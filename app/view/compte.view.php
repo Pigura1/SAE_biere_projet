@@ -17,6 +17,7 @@
         <div id="error-message" class="error-message"></div>
     </form>
 </div>
+  <div class="SpeedLineArea"></div>
  <script>
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -30,8 +31,41 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 });
 </script>
+
+
+
+
+
+<script>
+function InitSpeedLine(){
+  var tHTML=``;
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  for(var i=0; i<100; i++){
+    var dx = Math.random() * width;     // position x aléatoire plein écran
+    var dy = Math.random() * height;    // position y aléatoire plein écran
+    var dz = (Math.random()-0.5)*0;
+    var dt = Math.random()*5;
+    var dangle = Math.random()*360;     // angle rotation en degrés
+    var rc = `hsl(${Math.random()*360}deg,100%,50%)`;
+    tHTML += `<div class="SpeedLineChange" style="animation-delay:${-dt}s; left:${dx}px; top:${dy}px;">
+      <div class="SpeedLine" style="transform:
+      rotateZ(${dangle}deg) rotateY(90deg);background:${rc}"></div>
+    </div>`;
+  }
+  document.querySelector(".SpeedLineArea").innerHTML = tHTML;
+}
+
+InitSpeedLine();
+</script>
+
+
+
+
+
 </body>
 </html>
+
 
 
 
