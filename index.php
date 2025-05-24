@@ -1,11 +1,5 @@
 <?php
-session_start();
 
-// Vérifie si l'âge a été validé
-if (!isset($_COOKIE['age_verified'])) {
-    header('Location: agecheck.php');
-    exit;
-}
 
 // --- Ton code de routeur habituel ---
 

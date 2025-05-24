@@ -33,7 +33,7 @@
     <li><a href="index.php?route=trombinoscope" data-text="À PROPOS">À propos</a></li>
     <li><a href="#" data-text="BRASSAGE">Brassage</a></li>
     <li><a href="index.php?route=contact" data-text="NOUS CONTACTER">Nous contacter</a></li>
-    <li><a href="index.php?route=achat" data-text="ACHAT">Achat</a></li>
+    <li><a href="index.php?route=achat" ><img src="public/images/panier.png"/></a></li>
     <li><a class="btn-login" href="index.php?route=compte">Compte</a></li>
   </ul>
 </nav>
