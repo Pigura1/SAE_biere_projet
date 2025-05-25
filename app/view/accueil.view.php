@@ -10,11 +10,12 @@
 
 
 
+
  <section id="caroussel">
-  <div id="slides">
+  <div id="slides" ">
     <!-- 6 bières -->
     <div class="bière">
-      <img src="public/images/big/blonde.png" alt="bière 1" class="bières" />
+      <img src="public/images/big/blanche.png" alt="bière 1" class="bières" />
       <div class="description">
         <h3>Cyb3r Paradise</h3>
         <p>Description de la bière 1</p>
@@ -28,7 +29,7 @@
       </div>
     </div>
     <div class="bière">
-      <img src="public/images/big/blonde.png" alt="bière 3" class="bières" />
+      <img src="public/images/big/brune.png" alt="bière 3" class="bières" />
       <div class="description">
         <h3>bière 3</h3>
         <p>Description de la bière 3</p>
@@ -49,7 +50,7 @@
       </div>
     </div>
     <div class="bière">
-      <img src="public/images/big/blonde.png" alt="bière 6" class="bières" />
+      <img src="public/images/big/stout.png" alt="bière 6" class="bières" />
       <div class="description">
         <h3>bière 6</h3>
         <p>Description de la bière 6</p>
@@ -100,6 +101,7 @@
       </div>
     </div>
   </div>
+  <button></button>
 </section>
 
 

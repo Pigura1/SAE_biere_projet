@@ -30,9 +30,7 @@
             <p class="birthdate"><?php echo str_replace("-", "/", $student["Age"]) ?></p>
             <p class="group">groupe <span><?php echo $student["Groupe"] ?></span></p>
             <p class="role"><span><?php echo $student["Role"]?></span>
-            <p class="desc">
-              <?php echo $student["Description"] ?>
-            </p>
+            
           </div>
         </a>
       </div>
