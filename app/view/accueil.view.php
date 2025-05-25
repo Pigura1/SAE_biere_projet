@@ -3,14 +3,6 @@
     <span>Bienvenue sur le site officiel de Cyb3r Heaven !</span>
   </h2>
 
-
-
-
-
-
-
-
-
  <section id="caroussel">
   <div id="slides" ">
     <!-- 6 bières -->
