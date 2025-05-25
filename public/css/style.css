@@ -140,7 +140,7 @@ nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   padding: 5px 15px;
   transition: all 0.3s ease-in-out;
@@ -255,15 +255,11 @@ nav a:hover::after {
 
 
 nav a img {
-  height:  125px;         /* Taille un peu plus visible que 40px, tu peux ajuster */
-          /* Largeur automatique pour garder proportions */
-  object-fit: contain;    /* Pas d'aplatissement, l'image garde ses proportions */
+  height:  125px;   
+  object-fit: contain;   
   transition: transform 0.6s ease-in-out;
-
+  cursor: pointer;
 }
-
-
-
 
 
 nav a img:hover {
@@ -279,23 +275,41 @@ nav a img:hover {
 
 /* Bouton connexion */
 .btn-login {
-    border: 1px solid #00ffff;
     width: 100%;
     cursor: pointer;
     display: inline-block;
     transition: all 0.3s ease;
     background: transparent;
     color: #ffffff;
+    cursor: pointer !important;
 }
 
 .btn-login:hover {
-    background-color: #00ffff;
-    color: #fffb00;
-    box-shadow: 0 0 5px #0ff, 0 0 20px #0ff;
+   cursor: pointer !important;
 }
 
 
 
+
+
+.logocompte {
+   padding: 25px;
+   cursor: pointer;
+ 
+}
+
+.logopanier {
+  padding: 25px;
+  cursor: pointer;
+
+   
+}
+
+.logopanier,
+.logocompte {
+  height: 100px; 
+  
+}
 
 
 
@@ -1243,10 +1257,7 @@ nav ul.desktop a {
   text-decoration: none;
 }
 
-.btn-login {
-  border: 1px solid cyan;
-  padding: 0.25rem 0.75rem;
-}
+
 
 .bière{
   max-width: 100%;
@@ -1585,4 +1596,5 @@ box-shadow: 0 0 15px #0ff;
 
 #logo-compte {
     width: 50px;
+    
 }
