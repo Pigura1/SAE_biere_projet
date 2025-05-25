@@ -1249,7 +1249,10 @@ nav ul.desktop a {
 }
 
 
-
+#logocompte{
+  width:100%;
+  max-width :100px;
+}
 
 
 
