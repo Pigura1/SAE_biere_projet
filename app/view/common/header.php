@@ -34,9 +34,9 @@
     <li><a href="#" data-text="BRASSAGE">Brassage</a></li>
     <li><a href="index.php?route=contact" data-text="NOUS CONTACTER">Nous contacter</a></li>
     <li><a href="index.php?route=achat" ><img id="panier" src="public/images/panier.png" alt="Panier" /></a></li>
-       <li><a href="index.php?route=achat" ><img id="panier" src="public/images/logo-compte.png" alt="Panier" /></a></li>
+       
 
-    <li><a class="btn-login" href="index.php?route=compte">Compte</a></li>
+    <li><a class="btn-login" href="index.php?route=compte">Compte<img id="panier" src="public/images/logocompte.png" alt="compte" /></a></li>
   </ul>
 </nav>
 
