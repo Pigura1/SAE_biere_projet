@@ -31,7 +31,7 @@
      <li><a href="index.php?route=home"><img src="public/images/logo.png" alt="Accueil" /></a></li>
     <li><a href="index.php?route=produit" data-text="PRODUITS">Produits</a></li>
     <li><a href="index.php?route=trombinoscope" data-text="À PROPOS">À propos</a></li>
-    <li><a href="#" data-text="BRASSAGE">Brassage</a></li>
+    <li><a href="index.php?route=brassage" data-text="BRASSAGE">Brassage</a></li>
     <li><a href="index.php?route=contact" data-text="NOUS CONTACTER">Nous contacter</a></li>
     <li><a href="index.php?route=achat" ><img src="public/images/panier.png"class="logopanier"/></a></li>
     <li><a class="btn-login" href="index.php?route=compte"><img src="public/images/logocompte.png" class="logocompte" /></a></li>

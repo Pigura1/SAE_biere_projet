@@ -1257,7 +1257,14 @@ nav ul.desktop a {
   text-decoration: none;
 }
 
-
+#brassage img{
+  width:100%;
+  max-width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
 
 .bière{
   max-width: 100%;

@@ -19,7 +19,7 @@ function generateStudentPage() {
     $id = $_GET['id_equipe']; //TODO: pas sécurisé 
 
     $data = [ 
-        'equipe' => getStudent($id),
+        'equipe' => getStudentById($id),
         'page_title' => "Trombinoscope", 
         'view' => 'app/view/student.view.php', 
         'layout' => 'app/view/common/layout.php', 
