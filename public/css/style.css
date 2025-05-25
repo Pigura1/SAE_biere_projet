@@ -1248,6 +1248,18 @@ nav ul.desktop a {
   padding: 0.25rem 0.75rem;
 }
 
+.bière{
+  max-width: 100%;
+  width: 280px;
+  margin: 0 15px;
+  
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  flex-shrink: 0;
+}
 
 #logocompte{
   width:100%;

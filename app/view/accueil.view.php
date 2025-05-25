@@ -10,8 +10,9 @@
 
 
 
+
  <section id="caroussel">
-  <div id="slides">
+  <div id="slides" ">
     <!-- 6 bières -->
     <div class="bière">
       <img src="public/images/big/blanche.png" alt="bière 1" class="bières" />
@@ -100,6 +101,7 @@
       </div>
     </div>
   </div>
+  <button></button>
 </section>
 
 
