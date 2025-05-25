@@ -1122,6 +1122,7 @@ footer {
   justify-content: center;
   align-items: center;     
   flex-direction: column;
+  padding: 2rem;
 }
 
 /** css newsletter*/
@@ -1605,3 +1606,8 @@ box-shadow: 0 0 15px #0ff;
     width: 50px;
     
 }
+
+
+/*
+brassage
+*/
