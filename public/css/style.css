@@ -1564,3 +1564,10 @@ box-shadow: 0 0 15px #0ff;
 /* reference du code (modifié) : HD player sur codepen.io */
 }
 
+#panier{
+  width: 50px;
+}
+
+#logo-compte {
+    width: 50px;
+}
