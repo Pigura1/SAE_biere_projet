@@ -464,6 +464,7 @@ footer {
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
+    
    
 }
 
@@ -474,8 +475,8 @@ footer {
 
     overflow: hidden;
     box-shadow: 0 0 10px #3E4960;
+    border: 2px solid #0ff;
     font-family: 'Orbitron', sans-serif;
-    text-align: center;
     transition: transform 0.2s;
 }
 
@@ -1611,3 +1612,5 @@ box-shadow: 0 0 15px #0ff;
 /*
 brassage
 */
+
+
