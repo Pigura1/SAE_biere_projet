@@ -43,7 +43,8 @@ if (isset($_COOKIE['age_verified'])) {
   <script>
     function acceptAge() {
       // Mettre le cookie et attendre un peu avant de rediriger pour s'assurer qu'il est pris en compte
-      document.cookie = "age_verified=true; path=/;";
+      
+      
       setTimeout(() => {
         window.location.href = "index.php";
       }, 500);

@@ -60,7 +60,7 @@ switch ($route) {
         require_once 'app/controller/achat.controller.php';
         generateAchatPage();
         break;
-    case 'brassage';
+    case 'brassage':
         require_once 'app/controller/brassage.controller.php';
         generateBrassagePage();
         break;
