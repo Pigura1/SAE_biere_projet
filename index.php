@@ -1,25 +1,26 @@
 <?php
 
-// Si l'utilisateur n'a pas encore validé son âge, on le redirige vers la page de vérification
-if (!isset($_COOKIE['age_verified'])) {
-    header('Location: agecheck.php'); // Remplace "verify.php" par le nom réel de ta page de vérif
-    exit;
-}
-
-// --- Ton code de routeur habituel ---
+// index.php
 
 require_once 'config.php';
 require_once 'app/model/model.php';
-require_once 'app/controller/accueil.controller.php';
+require_once 'app/controller/agecheck.controller.php';
+
+// Redirection obligatoire vers la page de vérification si le cookie n'existe pas
+if (!isset($_COOKIE['age_verified']) && (!isset($_GET['route']) || $_GET['route'] !== 'validate_age')) {
+    showAgeCheckPage();
+    exit;
+}
 
 $route = 'home';
 if (!empty($_GET['route'])) {
     $route = $_GET['route'];
 }
 
-
-
 switch ($route) {
+    case 'validate_age':
+        validateAgeCheck();
+        break;
     case 'home':
         require_once 'app/controller/accueil.controller.php';
         generateHomePage();
@@ -60,11 +61,10 @@ switch ($route) {
         require_once 'app/controller/achat.controller.php';
         generateAchatPage();
         break;
-    case 'brassage';
+    case 'brassage':
         require_once 'app/controller/brassage.controller.php';
         generateBrassagePage();
         break;
     default:
         exit;
 }
-?>
