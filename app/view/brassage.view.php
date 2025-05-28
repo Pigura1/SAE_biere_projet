@@ -31,4 +31,6 @@
     <img src="public/images/densite1.JPG"/>
     <img src="public/images/densite2.jpeg"/>
     <img src="public/images/bouteilles.JPG"/>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QI1AUaY0K9w?si=zGsQItX0TO4ox3Wz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
