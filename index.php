@@ -1,5 +1,10 @@
 <?php
 
+// Si l'utilisateur n'a pas encore validé son âge, on le redirige vers la page de vérification
+if (!isset($_COOKIE['age_verified'])) {
+    header('Location: agecheck.php'); // Remplace "verify.php" par le nom réel de ta page de vérif
+    exit;
+}
 
 // --- Ton code de routeur habituel ---
 
@@ -11,6 +16,8 @@ $route = 'home';
 if (!empty($_GET['route'])) {
     $route = $_GET['route'];
 }
+
+
 
 switch ($route) {
     case 'home':
