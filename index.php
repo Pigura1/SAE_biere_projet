@@ -4,13 +4,10 @@
 
 require_once 'config.php';
 require_once 'app/model/model.php';
-require_once 'app/controller/agecheck.controller.php';
+
 
 // Redirection obligatoire vers la page de vérification si le cookie n'existe pas
-if (!isset($_COOKIE['age_verified']) && (!isset($_GET['route']) || $_GET['route'] !== 'validate_age')) {
-    showAgeCheckPage();
-    exit;
-}
+
 
 $route = 'home';
 if (!empty($_GET['route'])) {
@@ -18,9 +15,7 @@ if (!empty($_GET['route'])) {
 }
 
 switch ($route) {
-    case 'validate_age':
-        validateAgeCheck();
-        break;
+   
     case 'home':
         require_once 'app/controller/accueil.controller.php';
         generateHomePage();
