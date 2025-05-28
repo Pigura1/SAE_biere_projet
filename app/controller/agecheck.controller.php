@@ -7,12 +7,17 @@ function showAgeCheckPage() {
 function validateAgeCheck() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['confirm_age']) && $_POST['confirm_age'] === 'yes') {
-           
-            header('Location: index.php');
+            setcookie('age_verified', '1', [
+                'expires' => time() + 3600,
+                'path' => '/',
+                'secure' => isset($_SERVER['HTTPS']),
+                'httponly' => true,
+                'samesite' => 'Lax'
+            ]);
+            header('Location: index.php?route=home');
             exit;
         } else {
-            // Redirection si utilisateur refuse
-            header('Location: https://www.google.com'); 
+            header('Location: https://www.google.com');
             exit;
         }
     }
