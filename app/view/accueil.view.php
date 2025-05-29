@@ -2,7 +2,6 @@
 
   <body>
     <head>
-      <link rel="stylesheet" href="../../public/css/carousel.css">
     </head>
     <main>
   <h2 class="hero glitch layers" data-text="EXAMPLE">
