@@ -13,7 +13,7 @@
       <div class="slider">
         <div class="slide">
           <p id="description">
-            bière blonde
+            Cyb3r fact ! : lorempipsumol lopgoblo loponin likiue!
           </p>
           <img src="public/images/big/blonde.png" alt="Slide 1">
         </div>
