@@ -1,4 +1,7 @@
-<main>
+
+
+  <body>
+    <main>
   <h2 class="hero glitch layers" data-text="EXAMPLE">
     <span>Bienvenue sur le site officiel de Cyb3r Heaven !</span>
   </h2>
@@ -15,16 +18,6 @@
     <div class="slide"><img src="public/images/big/blonde.png" alt="Slide 6"></div>
   </div>
   </div>
-
-
-
-
-
-
-
-
-
-  <body>
     <div class="video-container">
       <video class="video" controls>
         <source src="liendelavideo.mp4" type="video/mp4">
