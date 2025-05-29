@@ -4,13 +4,13 @@
 
 require_once 'config.php';
 require_once 'app/model/model.php';
-require_once 'app/controller/agecheck.controller.php';
+//require_once 'app/controller/agecheck.controller.php';
 
 // Si le cookie n'existe pas et que la route n'est pas validate_age, afficher la page de vérification
-if (!isset($_COOKIE['age_verified']) && (!isset($_GET['route']) || $_GET['route'] !== 'validate_age')) {
-    showAgeCheckPage();
-    exit;
-}
+//if (!isset($_COOKIE['age_verified']) && (!isset($_GET['route']) || $_GET['route'] !== 'validate_age')) {
+    //showAgeCheckPage();
+    //exit;
+//}
 
 $route = 'home';
 if (!empty($_GET['route'])) {
@@ -18,10 +18,7 @@ if (!empty($_GET['route'])) {
 }
 
 switch ($route) {
-    case 'validate_age':
-       
-        validateAgeCheck();
-        break;
+    
 
     case 'home':
         require_once 'app/controller/accueil.controller.php';
@@ -77,9 +74,13 @@ switch ($route) {
         require_once 'app/controller/brassage.controller.php';
         generateBrassagePage();
         break;
-
+    //case 'validate_age':
+       
+        //validateAgeCheck();
+        //break;    
     default:
         http_response_code(404);
         echo "Page non trouvée";
+        break;
         exit;
 }

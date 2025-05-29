@@ -1,7 +1,7 @@
 <?php
 
 function showAgeCheckPage() {
-    include 'app/view/agecheck.view.php';
+    //include 'app/view/agecheck.view.php';
 }
 
 function validateAgeCheck() {
