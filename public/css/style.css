@@ -22,12 +22,17 @@ body {
 
 #carousel {
       width: 600px;
-      height: 500px;
+      height: 700px;
       overflow: hidden;
       position: relative;
       border-radius: 20px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin: 0 auto;
 
+    }
+
+    #description {
+      padding: 0 0 0 40px;
     }
 
     .slider {
