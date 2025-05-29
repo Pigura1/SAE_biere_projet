@@ -10,7 +10,7 @@
 
 
   <!-- 6 bières -->
-<div class="carousel">
+<div id="carousel">
   <div class="slider">
     <div class="slide"><img src="public/images/big/blonde.png" alt="Slide 1"></div>
     <div class="slide"><img src=".public/images/big/blonde.png" alt="Slide 2"></div>
