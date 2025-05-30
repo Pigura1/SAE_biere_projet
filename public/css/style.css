@@ -165,7 +165,7 @@ nav ul {
   justify-content: space-around;
   width: 100%;
   position: fixed;
-  background: #0a0a0f;
+  background: #141b2c;
   border-bottom: 2.5px solid #0ff;
   box-shadow: #0ff 0 0 15px;
   z-index: 9999999;
@@ -1615,7 +1615,7 @@ footer
 
 
 footer {
-  background: #0a0a0f;
+  background: #000000;
    border-top: 2.5px solid #0ff;
    box-shadow: #0ff 0 0 15px;
   font-family: 'Orbitron', sans-serif;
@@ -1761,7 +1761,7 @@ footer > p {
 }
 
 .footer-socials a img {
-  width: 24px;
+  width: 50px;
   margin-right: 10px;
   filter: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -1771,86 +1771,53 @@ footer > p {
 
 .footer-socials {
   
-  
   margin-left: 70px; /* ajuste la valeur selon le rendu souhaité */
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer responsive */
-@media (max-width: 900px) {
-  footer {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem 1rem;
-  }
-
-  .footer-socials {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 0;
-  }
-
-  .footer-socials span {
-    flex-basis: 100%;
-    margin-bottom: 0.5rem;
-  }
+/* Conteneur horizontal pour les deux blocs */
+.footer-socials, .footer-logo-details {
+  display: inline-block;
+  vertical-align: top;
 }
 
-@media (max-width: 600px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-menus,
-  .footer-mentions,
-  .footer-newsletter,
-  .footer-socials {
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  .footer-droits,
-  footer > p {
-    text-align: center;
-  }
-
-  .footer-newsletter form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .footer-newsletter input[type="email"] {
-    width: 100%;
-  }
-
-  .footer-newsletter button {
-    width: 100%;
-  }
-
-  .footer-socials {
-    align-items: center;
-    gap: 12px;
-  }
+.footer-socials {
+  width: 50%;
 }
+
+.footer-logo-details img {
+  width: 60%;
+  text-align: right;
+  margin-bottom: -10px;
+}
+
+/* Icônes sociales en ligne */
+.footer-socials a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.footer-socials .socials-inline {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
