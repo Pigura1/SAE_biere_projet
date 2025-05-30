@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app/view/common/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <title>Cyb3r Heaven</title>
+    <title>Cyb3rHeaven</title>
 </head>
 
 
@@ -28,7 +28,7 @@
  <nav>
   <ul>
      
-     <li><a href="index.php?route=home"><img src="public/images/logo.png" alt="Accueil" /></a></li>
+    <li><a href="index.php?route=home"><img src="public/images/logo.png" alt="Accueil" /></a></li>
     <li><a href="index.php?route=produit" data-text="PRODUITS">Produits</a></li>
     <li><a href="index.php?route=trombinoscope" data-text="À PROPOS">À propos</a></li>
     <li><a href="index.php?route=brassage" data-text="BRASSAGE">Brassage</a></li>

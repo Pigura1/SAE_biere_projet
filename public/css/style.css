@@ -165,9 +165,9 @@ nav ul {
   justify-content: space-around;
   width: 100%;
   position: fixed;
-  background: #1e2a43;
+  background: #0a0a0f;
   border-bottom: 2.5px solid #0ff;
-  box-shadow: 20px rgba(0, 255, 255, 0.2);
+  box-shadow: #0ff 0 0 15px;
   z-index: 9999999;
 }
 
@@ -417,45 +417,7 @@ input[type="password"] {
 
 
 
-/* Footer */
 
-
-
-footer {
-  /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
-   /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);  */
-     /* background: linear-gradient(135deg, #2A3A54, #3A4B64, #485E7A, #3A4B64, #2A3A54);*/
-   background: #1a233f;
-  border-top: 2.5px solid #0ff;
-  color: white;
-   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 30px 20px;
-  box-shadow: 0 -5px 20px rgba(0, 255, 255, 0.2);
-  grid-row: 3 / 4;
-}
-
-
-
-
-.footer-content h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #00ffff;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
-}
-
-
-.footer-content p {
-  
-  font-size: 0.8rem;
-  margin: 5px 0;
-  
-}
 
 
 
@@ -1224,19 +1186,6 @@ footer {
 
 
 
-.footer-socials {
-    align-items: center;
-    color: #c5c5c5;
-    display: flex;
-    font-family: BlenderProBold, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    img { cursor: pointer;
-
-    }
-  }
-
 
 
 * {
@@ -1631,3 +1580,277 @@ brassage
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+footer
+*/
+
+
+
+
+
+
+footer {
+  background: #0a0a0f;
+   border-top: 2.5px solid #0ff;
+   box-shadow: #0ff 0 0 15px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+
+
+.footer-menus h3 {
+  color: #00ffee;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.footer-menus,
+.footer-mentions,
+.footer-newsletter,
+.footer-socials {
+  padding: 1rem;
+  margin-left: 70px; /* Ajuste la valeur selon le rendu souhaité */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+
+
+
+/* Liens stylés */
+footer p,
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+ 
+}
+
+/* Effet underline animé */
+footer p:hover::after,
+footer a:hover::after {
+  width: 100%;
+}
+
+
+/* Newsletter form */
+.footer-newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-newsletter input[type="email"] {
+  padding: 0.5rem;
+  background: transparent;
+  border: 1px solid #00eaff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.footer-newsletter button {
+  background: #00eaff;
+  border: none;
+  padding: 0.5rem;
+  color: #0a0a0f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background: #ffff00;
+}
+
+/* Réseaux sociaux */
+.footer-socials span {
+  margin-bottom: 0.5rem;
+  color: #7b7b7b;
+}
+
+
+.footer-socials a:hover img {
+  transform: scale(1.2);
+}
+
+/* Logo */
+.footer-socials img[alt="Cyb3r Heaven logo"] {
+  
+  width: 100px;
+  margin: 1rem 0;
+}
+
+/* Phrase alcool */
+footer > p {
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #999;
+}
+
+/* Droits */
+.footer-droits {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  border-top: 1px solid #222;
+  padding-top: 1rem;
+  color: #666;
+}
+
+.footer-menus a,
+.footer-mentions p {
+  position: relative;
+  display: inline-block;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-menus a::after,
+.footer-mentions p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff200;
+  transition: width 0.3s ease;
+}
+
+.footer-menus a:hover::after,
+.footer-mentions p:hover::after {
+  width: 40%;
+}
+
+.footer-socials a img {
+  width: 24px;
+  margin-right: 10px;
+  filter: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.85;
+  cursor: pointer !important;
+}
+
+.footer-socials {
+  
+  
+  margin-left: 70px; /* ajuste la valeur selon le rendu souhaité */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer responsive */
+@media (max-width: 900px) {
+  footer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-socials {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .footer-socials span {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-menus,
+  .footer-mentions,
+  .footer-newsletter,
+  .footer-socials {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-droits,
+  footer > p {
+    text-align: center;
+  }
+
+  .footer-newsletter form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-newsletter input[type="email"] {
+    width: 100%;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+
+  .footer-socials {
+    align-items: center;
+    gap: 12px;
+  }
+}
