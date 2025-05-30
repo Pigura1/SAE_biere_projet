@@ -19,7 +19,6 @@ if (!empty($_GET['route'])) {
 
 switch ($route) {
     
-
     case 'home':
         require_once 'app/controller/accueil.controller.php';
         generateHomePage();

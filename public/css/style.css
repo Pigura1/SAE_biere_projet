@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +15,6 @@ body {
   margin: 0;
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
-
 
 
 /* CSS CAROUSSEL */
@@ -43,7 +42,7 @@ body {
     }
 
     .slide {
-      width: 16.6666%; / 100% / 6 */
+      width: 16.6666%; /* 100% / 6 */
       flex-shrink: 0;
     }
 
@@ -1653,7 +1652,7 @@ footer {
 /* Liens stylés */
 footer p,
 footer a {
-  color: #ccc;
+  color: #cccccc;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
