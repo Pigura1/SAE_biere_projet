@@ -1568,10 +1568,6 @@ box-shadow: 0 0 15px #0ff;
 }
 
 
-/*
-brassage
-*/
-
 
 
 
@@ -1803,6 +1799,182 @@ footer > p {
   margin-top: 5px;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+/*
+brassage
+*/
+
+
+/* === POLICES & VARIABLES === */
+:root {
+  --primary: rgb(0, 200, 255); /* cyan électrique */
+  --secondary: rgb(0, 255, 217); /* rose vif */
+  --dark-bg: #0a0a0a;
+  --panel-bg: rgba(20, 20, 20, 0.85);
+  --text-color: #e0e0e0;
+  --accent: rgb(255, 230, 0); /* jaune lumineux */
+  --glow: 0 0 20px var(--primary);
+}
+
+#brassage img {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  
+  transition: none; /* plus de transition hover */
+  transform: none; /* plus de scale */
+}
+
+#brassage img:hover {
+  transform: none;
+ 
+}
+
+
+#brassage {
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 2rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  box-shadow: var(--glow);
+  backdrop-filter: blur(10px);
+  position: relative;
+  animation: fadeIn 2s ease;
+}
+
+#brassage h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-top: 3rem;
+  border-bottom: 2px dashed var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+#brassage h3 {
+  font-size: 1.6rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  text-shadow: var(--glow);
+}
+
+#brassage p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  animation: slideUp 1s ease both;
+}
+
+#brassage img {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--glow);
+  transform: scale(0.95);
+  transition: transform 0.4s ease;
+}
+
+#brassage img:hover {
+  transform: scale(1.02);
+}
+
+iframe {
+  display: block;
+  margin: 40px auto;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: var(--glow);
+}
+
+/* === SCROLL ANIMATION === */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === KEYFRAMES === */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === DECORATIVE EFFECTS === */
+#brassage::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 200px;
+  height: 20px;
+  background: var(--accent);
+  box-shadow: var(--glow);
+  transform: rotate(-3deg);
+}
+
+#brassage::after {
+  content: "Brassage";
+  position: absolute;
+  top: -60px;
+  left: 40px;
+  font-size: 2rem;
+  color: var(--primary);
+  
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  #brassage {
+    padding: 1rem;
+  }
+
+  #brassage img {
+    max-width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
 
 
 

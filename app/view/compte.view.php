@@ -1,40 +1,42 @@
  
    
    <div class="login-container">
-    <h2>LOGIN</h2>
+    <h2>Connexion à la matrice</h2>
     <form id="loginForm">
         <div class="form-group1">
-            <label for="username">Username:</label>
+            <label for="username">Nom d'utilisateur :</label>
             <input type="text" id="username" name="username" required>
         </div>
         <div class="form-group2">
-            <label for="password">Password:</label>
+            <label for="password">Mot de passe :</label>
             <input type="password" id="password" name="password" required>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn-access">ACCESS</button>
+            <button type="submit" class="btn-access">Valider l'identité</button>
         </div>
         <div id="error-message" class="error-message"></div>
     </form>
 </div>
-  <div class="SpeedLineArea"></div>
+  
+
+
+
  <script>
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === 'cyberpunk' && password === 'neon') {
-        alert('Connexion réussie ! Accès accordé.');
+    if (username === 'cyb3rheaven' && password === 'mmi') {
+        alert('Système contourné avec succès ! Bienvenue dans la matrice, agent V.');
     } else {
-        document.getElementById('error-message').textContent = 'Accès refusé : Informations d\'identification non valides';
+        document.getElementById('error-message').textContent = 'Accès refusé : Informations d\'identification non valides. Autodestruction du système dans 10...9...8...';
     }
 });
 </script>
 
 
-
-
+<div class="SpeedLineArea"></div>
 
 <script>
 function InitSpeedLine(){

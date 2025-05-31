@@ -1,4 +1,4 @@
-<h1>Le processus du brassage de Cyb3r Heaven</h1>
+
 <div id="brassage">
     
     <h3>Voici le malt, l'ingrédient de base qui va servir au brassage de notre bière.</h3>
