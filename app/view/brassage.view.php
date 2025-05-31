@@ -13,7 +13,7 @@
     </div>
     <div id="imgetape1">
     <img class="imgbras" src="public/images/concassage1.jpg"/>
-    <img class="imgbras" src="public/images/concassage2.png"/>
+    <img class="imgbras" src="public/images/concassage-2.png"/>
     </div>
     
     <div id="etape2">
@@ -24,7 +24,7 @@
     <div id="imgetape2">
     <img class="imgbras" src="public/images/maltverseavant.jpeg"/>
     
-    <img class="imgbras" src="public/images/maltverse.png"/>
+    <img class="imgbras" src="public/images/maltversee.png"/>
     </div>
     
     <div id="etape4">
@@ -32,7 +32,7 @@
     <p class="pbras">Par la suite il faut filtrer ce mélange appelé moût, pour le séparer des résidus solides, qu’on appelle les drêches. </p>
     </div>
     <div id="imgetape4">
-    <img class="imgbras" src="public/images/filtrage.png"/>
+    <img class="imgbras" src="public/images/filtrage1.png"/>
     </div>
     <div id="etape5">
     <h2 class="etapetext">Etape 4</h2>
@@ -51,7 +51,10 @@
     <img class="imgbras" src="public/images/densite2.jpeg"/>
     <img class="imgbras" src="public/images/bouteilles.JPG"/>
     </div>
+    <br> </br>
+    
     <div id="videobrassage">
+        <p> Pour résumer les étapes du brassage de Cyb3r Heaven par l'équipe Génie Biologique, voici la vidéo "coulisses" résumée en moins d'une minute par Jelly, notre mascotte préférée <3!</p>  
     <iframe id="videobras" width="560" height="315" src="https://www.youtube.com/embed/IdLZzX5zAUw?si=sW9THcmOJLqQJi1L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>    
 </div>
