@@ -6,7 +6,7 @@
 <div class="instagram">
     <p>Sur Notre Compte Instagram</p>
 <div id="instaimg">
-    <a href="https://www.instagram.com/cyb3r_heaven?igsh=OHRkc2x5cDJqa3Zm&utm_source=qr"><img src="public/images/qrcode.png" 
+    <a id="instagramimg" href="https://www.instagram.com/cyb3r_heaven?igsh=OHRkc2x5cDJqa3Zm&utm_source=qr"><img src="public/images/instagram.png" 
     alt="qrcodeinstagram" 
     style="width:80px;height:80px;"></a>
 
@@ -18,7 +18,7 @@
 <div class="Youtube">
     <p>Sur Notre Chaine YouTube</p>
 <div id="youtubeimg">
-    <a href=""><img src="public/images/Youtubelogo.png" alt="youtubeimg" 
+    <a href=""><img id="youtubeeimg" src="public/images/youtube.png" alt="youtubeimg" 
       style="width:86px;height:60px"></a>
     
 </div>

@@ -44,6 +44,7 @@
     <div class="mobile-menu">
       <button class="close-mobile">✖</button>
        <img src="public/images/small/Render.gif" alt="Logo" class="h" />
+       
     <a href="index.php?route=produit">Produits</a>
     <a href="index.php?route=trombinoscope">À propos</a>
     <a href="#">Brassage</a>
