@@ -10,7 +10,7 @@ require_once 'app/model/acceuil.model.php';
  */
 function generateHomePage() {
     $data = [
-        'article'=> getAllProducts(),
+        'articles'=> getAllProducts(),
         'page_title' => "Cyb3r Heaven",
         'view' => 'app/view/accueil.view.php',
         'layout' => 'app/view/common/layout.php',

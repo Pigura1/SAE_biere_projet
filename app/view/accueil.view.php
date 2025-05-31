@@ -36,7 +36,7 @@
         <div class="slide">
           <p id="description">
             bière blonde
-          </p><img src="public/images/big/blonde.png" alt="Slide 6"></div>
+          </p><img src="public/images/big/stout.png" alt="Slide 6"></div>
       </div>
     </div>
     <div class="video-container">

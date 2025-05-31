@@ -1293,6 +1293,15 @@ nav ul.desktop a {
   grid-column: 1/3;
   text-align: center;
 }
+.instagram{
+  padding: 10px;
+}
+.Youtube{
+  padding: 10px;
+}
+#youtubeeimg{
+  text-align: center;
+}
 #brassage h3{
   display: flex;
   align-items: center;
