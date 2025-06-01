@@ -78,6 +78,26 @@ img {
   height: auto;
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Trombinoscope */
 
 
@@ -88,6 +108,7 @@ img {
 }
 .student-card:hover {
   transform: scale(1.02);
+  
 }
 .student-card{
   display: inline-block;
@@ -100,6 +121,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   border: 2px solid #0ff;
+  transition: transform 0.3s ease;
 }
 
 .student-card a{
@@ -124,12 +146,21 @@ img {
   font-size: 2rem;
   vertical-align: top;
   text-align: center;
+  cursor: pointer;
 }
 .studentimg .photo {
   display: inline-block;
   width: min(40%, 400px);
   margin-left: 2rem;
+  cursor: pointer;
 }
+
+
+
+
+
+
+/* Pages bière */
 .bierefiche-infos {
   display: inline-block;
   width: min(50%, 600px);
