@@ -131,18 +131,42 @@ img {
   margin-left: 2rem;
 }
 .bierefiche-infos {
-  display: inline-block;
+  display: flex;
   width: min(50%, 600px);
   margin-right: 2rem;
   margin-left: 4rem;
   font-size: 2rem;
   vertical-align: top;
-  text-align: center;
+  text-align: left;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 }
 .biereimg .photobiere {
   display: inline-block;
-  width: min(40%, 400px);
+  width: min(90%, 700px);
   margin-left: 2rem;
+
+}
+.photobiere{
+  grid-column: 1/2;
+  
+}
+
+.biereimg{
+  display: grid;
+ 
+  grid-template-columns: auto auto auto;
+}
+.bierefiche-infos{
+  
+  grid-column: 2/3;
+}
+
+.ingredients , .biere-prixe , .desce { 
+  padding: 2rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--primary);
+  margin-top: 10px;
 }
 /* Recherche */
 form {
@@ -1443,8 +1467,8 @@ main {
 .mobile-menu img {
   margin: 0 auto;
   display: block;
-  transform: scale(2); /* 150% de la taille originale */
- 
+  transform: scale(3.8); /* 150% de la taille originale */
+ padding-bottom: 20px;
  
 }
 

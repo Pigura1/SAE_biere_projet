@@ -1,18 +1,25 @@
 <main class="listebiere">
-    <h1><?php echo $data["fichebiere"]["Nom"] ?></h1>
+    <h1 class="nomdelabiere"><?php echo $data["fichebiere"]["Nom"] ?></h1>
     <div class="biereimg">
         <figure class="photobiere">
             <img src="public/images/big/<?php echo $data["fichebiere"]["Images"] ?>" alt="photo de <?php echo $data["fichebiere"]["Nom"] ?>" />
         </figure>
         <div class="bierefiche-infos">
-            <div class="data">
-                <p class="group">Les ingrédients sont <?php echo $data["fichebiere"]["Ingredients"] ?></p>
-            </div>
-            <p class="desc">
+            <p class="desce">
                 <?php echo $data["fichebiere"]["Description"] ?>
             </p>
-
+            
+            <div>
+               <p class="biere-prixe">Prix : <span><?php echo$data["fichebiere"]["Prix"]  ?> €</span></p> 
+            </div>
+            <div class="data">
+                <p class="ingredients">Les ingrédients sont <?php echo $data["fichebiere"]["Ingredients"] ?></p>
+            </div>
+            
+            <div>
+          
             <!-- Formulaire d'ajout au panier -->
+        </div>
           <form action="achat.view.php" method="GET" class="form-panier">
     <input type="hidden" name="biere" value="<?php echo $data["fichebiere"]["Nom"] ?>">
 
