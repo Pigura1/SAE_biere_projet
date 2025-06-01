@@ -1,14 +1,14 @@
 <main class="trombi">
   <h1>Notre équipe</h1>
-  <form>
-    <input type="hidden" name="route" value="search" />
-    <input
+  <form class="formrecherche">
+    <input  type="hidden" name="route" value="search" />
+    <input class="boxrecherche"
       type="text"
       name="search"
       id="search"
       class="search"
       placeholder="Nom ou Prénom" />
-    <input type="submit" value="Rechercher" name="submit" />
+    <input class="recherche" type="submit" value="Rechercher" name="submit" />
   </form>
   <div class="line-decoration" aria-hidden="true">
     <div class="line" id="line1"></div>

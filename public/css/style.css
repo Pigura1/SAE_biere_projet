@@ -86,20 +86,34 @@ img {
   max-width: 72rem;
   margin: auto;
 }
-
+.student-card:hover {
+  transform: scale(1.02);
+}
 .student-card{
   display: inline-block;
   width: 13rem;
   height: 30rem;
-  background-color: #00ffff; /* Voir avis des autres pour la couleur */
+  background: linear-gradient(135deg, #3A4B64, #3A4B64, #4B6288,#58709d, #4B6288, #3A4B64, #3A4B64);
   margin: 1.5rem;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #0ff;
 }
+
 .student-card a{
   text-decoration: none;
+  cursor: pointer;
+  color: white;
 }
+.student-card .photo{
+  cursor: pointer;
+}
+.student-card .card-infos{
+  cursor: pointer;
+}
+
 
 /* Pages seule */
 .student-infos {
@@ -1245,8 +1259,42 @@ input[type="password"] {
 
 
 
+/*Recherche*/
 
+.recherche{
+  display: flex;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 0.55rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 180px;
+  align-self: center;
+}
+.recherche:hover{
+  background-color: #00e6e6;
+  transform: scale(1.05);
 
+}
+.boxrecherche{
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  
+}
+.formrecherche{
+  display: flex;
+  flex-direction: column;
+}
 
 
 
