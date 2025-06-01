@@ -37,7 +37,7 @@
 
 
 <div class="footer-socials">
-  <span>Retrouvez-nous sur</span>
+  <span>Retrouvez-nous sur :</span>
   
   <div class="socials-inline">
     <a class="social-youtube" href="https://www.youtube.com/user/CyberPunkGame" target="_blank">

@@ -1086,78 +1086,190 @@ input[type="password"] {
 
 
 /* css de la page contact*/
-/** css page contact general*/
+
 .contact {
   display: flex;
-  justify-content: center;
-  align-items: center;     
   flex-direction: column;
-  padding: 2rem;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 3rem;
 }
 
-/** css newsletter*/
+.contact h1 {
+  font-size: 2rem;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 2rem;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.social-box {
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  border: 1px solid #00ffff44;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.social-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.5);
+}
+
+.social-box img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
 .newsletter {
-    background: linear-gradient(145deg, #1a1a1a, #111);
-    padding: 2rem;
-    border: 1px solid #2a2a2a;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(47, 72, 72, 0.2);
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  padding: 2rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(47, 72, 72, 0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: slideUp 1s ease-out forwards;
 }
 
 .newsletter:hover {
-    box-shadow: 0 0 25px rgba(159, 234, 234, 0.5);
+  box-shadow: 0 0 25px rgba(159, 234, 234, 0.5);
 }
 
 .newsletter p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.newsletter input[type="email"] {
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #222;
-    color: #fff;
-    font-size: 1rem;
-    box-shadow: inset 0 0 5px rgba(0,255,255,0.2);
-    transition: box-shadow 0.3s ease;
+.newsletter input[type="email"],
+.newsletter input[type="checkbox"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: inset 0 0 5px rgba(0,255,255,0.2);
+  transition: box-shadow 0.3s ease;
 }
 
 .newsletter input[type="email"]:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(0,255,255,0.5);
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+.newsletter label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
 }
 
 .newsletter button {
-    background-color: #00ffff;
-    color: #000;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .newsletter button:hover {
-    background-color: #00e6e6;
-    transform: scale(1.05);
+  background-color: #00e6e6;
+  transform: scale(1.05);
 }
 
-/*fin css newsletter*/
+.contact-info {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #aaa;
+  text-align: center;
+}
+
+#message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #00ffcc;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .social-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .social-box img {
+    width: 50px;
+    height: 50px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
