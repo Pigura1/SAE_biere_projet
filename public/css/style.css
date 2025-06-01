@@ -1435,13 +1435,15 @@ main {
 .mobile-menu a.btn-login {
   border: 1px solid cyan;
   padding: 0.5rem 1rem;
+  width: 200px;
+  max-width: 100%;
 }
 
 /* Logo centré dans le menu mobile */
 .mobile-menu img {
   margin: 0 auto;
   display: block;
-  transform: scale(3.8); /* 150% de la taille originale */
+  transform: scale(2); /* 150% de la taille originale */
  
  
 }
