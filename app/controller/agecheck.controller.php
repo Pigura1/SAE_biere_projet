@@ -1,24 +1,17 @@
 <?php
 
-function showAgeCheckPage() {
-    //include 'app/view/agecheck.view.php';
-}
+require_once 'app/controller/controller.php';
 
-function validateAgeCheck() {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['confirm_age']) && $_POST['confirm_age'] === 'yes') {
-            setcookie('age_verified', '1', [
-                'expires' => time() + 3600,
-                'path' => '/',
-                'secure' => isset($_SERVER['HTTPS']),
-                'httponly' => true,
-                'samesite' => 'Lax'
-            ]);
-            header('Location: index.php?route=home');
-            exit;
-        } else {
-            header('Location: https://www.google.com');
-            exit;
-        }
-    }
+/**
+ * @return void
+ */
+function generateAgeCheckPage() {
+    $data = [
+        'page_title' => "Vérification d'âge",
+        'view' => 'app/view/agecheck.view.php',
+        'layout' => 'app/view/common/layout.php',
+        'css' => 'app/public/css/agecheck.css',
+    ];
+
+    generatePage($data);
 }

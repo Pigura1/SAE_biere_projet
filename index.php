@@ -12,13 +12,17 @@ require_once 'app/model/model.php';
     //exit;
 //}
 
-$route = 'home';
+$route = 'agecheck';
 if (!empty($_GET['route'])) {
     $route = $_GET['route'];
 }
 
 switch ($route) {
-    
+
+    case 'agecheck':
+        require_once 'app/controller/agecheck.controller.php';
+        generateAgeCheckPage();
+        break;
     case 'home':
         require_once 'app/controller/accueil.controller.php';
         generateHomePage();
