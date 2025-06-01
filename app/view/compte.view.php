@@ -27,12 +27,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === 'cyb3rheaven' && password === 'mmi') {
-        alert('Système contourné avec succès ! Bienvenue dans la matrice, agent V.');
-    } else {
-        document.getElementById('error-message').textContent = 'Accès refusé : Informations d\'identification non valides. Autodestruction du système dans 10...9...8...';
-    }
-});
+   if (username === 'cyb3rheaven' && password === 'mmi') {
+    alert('Système contourné avec succès ! Bienvenue dans la matrice, agent V.');
+} else {
+    // Redirige vers la page "hacked"
+    window.location.href = "hacked.html";
+}});
 </script>
 
 
