@@ -31,6 +31,7 @@ function getSpecificBeers( $db, array $id): array {
     $articles= implode(',', array_fill(0, count($id), '?'));
     $sql = "SELECT * FROM articles WHERE id_articles IN ($articles)";
     $stmt = $db->prepare($sql);
+    $stmt->bindParam(':id_articles', $id, PDO::PARAM_INT);
     $stmt->execute($id);
     return $stmt->fetchAll();
 }

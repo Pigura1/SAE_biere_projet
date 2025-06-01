@@ -5,7 +5,7 @@
             <img src="public/images/big/<?php echo $data["fichebiere"]["Images"] ?>" alt="photo de <?php echo $data["fichebiere"]["Nom"] ?>" />
         </figure>
         <div class="bierefiche-infos">
-            <p class="desce">
+              <p class="desce">
                 <?php echo $data["fichebiere"]["Description"] ?>
             </p>
             

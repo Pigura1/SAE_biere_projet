@@ -2,6 +2,7 @@
 <?php
 session_start();
 $panier = $_SESSION['panier'] ?? [];
+
 ?>
 
 <h2>Votre panier</h2>
@@ -10,9 +11,9 @@ $panier = $_SESSION['panier'] ?? [];
     <p>Votre panier est vide.</p>
 <?php else: ?>
     <ul>
-        <?php foreach ($panier as $article): ?>
+        <?php foreach ($achat as $article): ?>
             <li>
-                <?= htmlspecialchars($article['nom']) ?> - <?= number_format($article['prix'], 2) ?> €
+                <?php $article['nom'] ?> - <?php $article['prix'] ?> €
             </li>
         <?php endforeach; ?>
     </ul>

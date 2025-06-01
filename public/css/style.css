@@ -199,6 +199,9 @@ img {
   border: 1px solid var(--primary);
   margin-top: 10px;
 }
+.form-panier{
+  margin-bottom: 20px;
+}
 /* Recherche */
 form {
   flex-direction: column;
