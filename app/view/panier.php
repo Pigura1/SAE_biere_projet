@@ -1,12 +1,12 @@
 <?php
 
-require_once 'app/model/products.model.php'; 
-require_once 'app/controller/controller.php';  
+
+require_once 'app/controller/panier.controller.php';  
 
 $achat = $_SESSION['achat'] ?? [];
 $id_articles = array_keys($achat);
 
-$db = getDatabaseConnexion(); 
+
 $bieres = getSpecificBeers($db, $id_articles);
 
 $bieresIndexed = [];
@@ -31,5 +31,5 @@ foreach ($achat as $id_articles => $quantite) {
     $totalPanier += $montant;
 }
 
-include 'app/view/achat.view.php';
+include 'index.php?route=achat';
 ?>
