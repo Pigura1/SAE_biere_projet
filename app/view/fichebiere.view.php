@@ -32,7 +32,7 @@
         </div>
     </div>
 
-<button type="button" class="btn-ajout" onclick="window.location.href='index.php?route=achat'">
+<button type="button" class="btn-ajout" onclick="window.location.href='index.php?route=ajout'">
   Ajouter au panier
 </button>
 

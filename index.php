@@ -16,7 +16,7 @@ $route = 'agecheck';
 if (!empty($_GET['route'])) {
     $route = $_GET['route'];
 }
-
+//faire des route pour le panier et l'ajout de bière
 switch ($route) {
 
     case 'agecheck':
@@ -32,7 +32,14 @@ switch ($route) {
         require_once 'app/controller/trombi.controller.php';
         generateTrombinoscopePage();
         break;
-
+    case 'ajout':
+        require_once 'app/controller/ajoutbiere.controller.php';
+        generateAjoutPage();
+        break;
+    case 'panier':
+        require_once 'app/controller/panier.controller.php';
+        generatePanierPage();
+        break;
     case 'produit':
         require_once 'app/controller/products.controller.php';
         generateProductPage();
