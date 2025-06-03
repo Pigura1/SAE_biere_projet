@@ -23,7 +23,7 @@
           </p><img src="public/images/big/blanche.png" alt="Slide 2"></div>
         <div class="slide">
           <p id="description">
-            Sc4ry Cyb3r f4cts... : 01101010 01100101 01110010 01110010 01111001 00001101 00001010
+            Sc4ry Cyb3r f4cts..: 01101010 01100101 01110010 01110010 01111001 00001101 00001010
           </p><img src="public/images/big/brune.png" alt="Slide 3"></div>
         <div class="slide">
           <p id="description">
