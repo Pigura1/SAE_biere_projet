@@ -79,8 +79,17 @@ img {
   display: block;
 }
 
+.presentation {
+  padding: 20px 20px 20px 20px;
+}
 
+.presentation h2 {
+  font-size: 100px ;
+}
 
+.presentation p {
+  font-size: 25px;
+}
 
 
 
