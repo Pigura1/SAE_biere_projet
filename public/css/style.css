@@ -20,18 +20,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .bg {
   animation: slidi 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #141b2c 50%, #09f 50%);
@@ -52,11 +40,6 @@ body {
 .bg3 {
   animation-duration: 5s;
 }
-
-
-
-
-
 
 
 
@@ -93,17 +76,6 @@ img {
 .presentation p {
   font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -649,24 +621,29 @@ input[type="password"] {
 
 
 .video-container {
-  width: 80%;
-  /* 80% de la largeur de la fenêtre */
-  height: 80%;
-  /* 80% de la hauteur de la fenêtre */
+   
+  
+  
   display: flex;
+  
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
+  margin-left: 140px;
+  margin-bottom: 30px;
 }
 
 /* Vidéo elle-même */
 .video {
-  width: 100%;
-  /* La vidéo prend toute la largeur de son conteneur */
-  height: 100%;
-  /* La vidéo prend toute la hauteur de son conteneur */
-  object-fit: cover;
-  /* Ajuste la vidéo sans la déformer */
-  margin-left: 80px;
+  
+  max-height: 415px;
+  
+  max-width: 660px;
+  text-align: center;
+  
+  
+  
+  
   padding: 20px;
 }
 
@@ -1301,59 +1278,6 @@ input[type="password"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Conteneur pour la vidéo */
-.video-container {
-  width: 80%;
-  /* 80% de la largeur de la fenêtre */
-  height: 80%;
-  /* 80% de la hauteur de la fenêtre */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 140px;
-  margin-bottom: 30px;
-
-
-}
-
-/* Vidéo elle-même */
-.video {
-  width: 100%;
-  /* La vidéo prend toute la largeur de son conteneur */
-  height: 100%;
-  /* La vidéo prend toute la hauteur de son conteneur */
-  object-fit: cover;
-  /* Ajuste la vidéo sans la déformer */
-}
-
-
-
-
-
-
 * {
   grid-template-rows: 0fr 0fr 0fr;
 }
@@ -1375,17 +1299,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Le bouton burger (mobile only) */
 .menu-toggle {
   display: none;
@@ -1399,16 +1312,6 @@ main {
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
