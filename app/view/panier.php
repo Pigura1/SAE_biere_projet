@@ -2,8 +2,9 @@
 
 
 require_once 'app/controller/panier.controller.php';  
+require_once 'app/view/ajout_biere.php';
 
-$achat = $_SESSION['achat'] ?? [];
+$achat = $_SESSION['achat'] ;
 $id_articles = array_keys($achat);
 
 
@@ -22,7 +23,7 @@ foreach ($achat as $id_articles => $quantite) {
     $fichebiere = $bieresIndexed[$id_articles];
     $montant = $fichebiere['Prix'] * $quantite;
 
-    $achat[$id_articles] = [
+    $achat = [
         'quantite' => $quantite,
         'biere' => $fichebiere,
         'montant' => $montant

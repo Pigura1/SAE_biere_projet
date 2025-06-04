@@ -26,9 +26,10 @@ function getMaxBiereId()
     $stmt->execute();
     return $stmt->fetch()["id_articles"];
 }
-function getSpecificBeers( $db, array $id): array {
+function getSpecificBeers( ){
     if (empty($id)) return [];
-    $articles= implode(',', array_fill(0, count($id), '?'));
+    $db = getDatabaseConnexion();
+    $articles = implode(',', array_fill(0, is_array($id) ? count($id) : 0, '?'));
     $sql = "SELECT * FROM articles WHERE id_articles IN ($articles)";
     $stmt = $db->prepare($sql);
     $stmt->bindParam(':id_articles', $id, PDO::PARAM_INT);

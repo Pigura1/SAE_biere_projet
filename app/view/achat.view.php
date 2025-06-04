@@ -1,7 +1,7 @@
 
 <?php
-session_start();
-$panier = $_SESSION['panier'] ?? [];
+
+//$panier = $_SESSION['panier'];
 
 ?>
 
@@ -13,7 +13,7 @@ $panier = $_SESSION['panier'] ?? [];
     <ul>
         <?php foreach ($achat as $article): ?>
             <li>
-                <?php $article['nom'] ?> - <?php $article['prix'] ?> €
+                <?php $article['Nom'] ?> - <?php $article['Prix'] ?> €
             </li>
         <?php endforeach; ?>
     </ul>
