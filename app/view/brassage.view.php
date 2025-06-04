@@ -55,6 +55,6 @@
     
     <div id="videobrassage">
         <p> Pour résumer les étapes du brassage de Cyb3r Heaven par l'équipe Génie Biologique, voici la vidéo "coulisses" résumée en moins d'une minute par Jelly, notre mascotte préférée <3!</p>  
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/usDz8JWglic?si=rWxyOF5jocZYioUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="video "width="660" height="415" src="https://www.youtube.com/embed/usDz8JWglic?si=rWxyOF5jocZYioUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>    
 </div>

@@ -637,13 +637,13 @@ input[type="password"] {
 .video {
   
   max-height: 415px;
-  
+  height: anchor-size(max-height);
   max-width: 660px;
   text-align: center;
+  width: anchor-size(max-width);
   
   
-  
-  
+  margin-left: 80px;
   padding: 20px;
 }
 
