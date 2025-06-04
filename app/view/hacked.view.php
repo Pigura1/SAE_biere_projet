@@ -12,6 +12,9 @@
 
 
 <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.min.js"></script> <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="css/style.css"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css"> <script type="text/javascript" src="js/bootstrap.min.js"></script> <script type="text/javascript" src="js/jquery.js"></script> <script type="text/javascript" src="js/jquery-1.10.2.min.js.download"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <style type="text/css"> @import url('https://fonts.googleapis.com/css?family=Nunito');@import url('https://fonts.googleapis.com/css?family=Poiret+One');body, html {height: 100%;background-repeat: no-repeat; /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/background:black;position: relative;}#particles-js{ width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; position: fixed; top: 0px; z-index:1;}h1{font:1.5em Cinzel,serif;font-weight:400;letter-spacing:.35em;text-shadow:0 0 25px rgba(254,254,255,.85);width:70%} footer { margin: 20%; }
+header , footer{
+    display: none;
+}
 #a {
 onmousedown:stop;
 animation-name: rotate ;

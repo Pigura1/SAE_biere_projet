@@ -63,12 +63,7 @@
     </div>
 
 
-    <div class="slide">
-      <img src="public/images/big/blonde.png" alt="Slide 6">
-      <h3>BLØND-RECURSE</h3>
-      <h4>BIERE AMBREE [LIMI3D EDITIØN]</h4>
-      <p class="description">CYB3R F4CT : Brassée sur les ruines du Web3 effondré.</p>
-    </div>
+    
   </div>
 
 

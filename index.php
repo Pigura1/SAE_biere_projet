@@ -44,7 +44,10 @@ switch ($route) {
         require_once 'app/controller/products.controller.php';
         generateProductPage();
         break;
-
+    case 'hacked':
+        require_once 'app/controller/hacked.controller.php';
+        generatehackedPage();
+        break;
     case 'contact':
         require_once 'app/controller/contact.controller.php';
         generateContactPage();

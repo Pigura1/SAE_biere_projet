@@ -31,7 +31,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     alert('Système contourné avec succès ! Bienvenue dans la matrice, agent V.');
 } else {
     // Redirige vers la page "hacked"
-    window.location.href = "app/view/hacked.html";
+    window.location.href = "index.php?route=hacked";
 }});
 </script>
 
