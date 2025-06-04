@@ -118,16 +118,20 @@
        <h2 class="hero glitch layers" data-text="EXAMPLE" id="hero2">
       <span>Notre histoire</span>
     </h2>
-      <p>Étudiants polyvalents, passionés, talentueux et excellent, nous vous accueillons dans notre monde paradisiaque.
-        <br>Conçues par nous même, nos bières du futur vous ferons voyagez dans un autre univers où tout est possible !
-        <br>Nous avions réunis nos différentes capacités, digitalement et physiquement, pour créer le produit parfait, et juste pour vous.
+      <p>Plongez dans un monde où le rétro-futurisme rencontre la douceur d’un moment suspendu.
+      <br> </br> 
+      <p>Cyb3r Heaven, c’est bien plus qu’une simple bière : c’est une expérience sensorielle, une échappée virtuelle vers un paradis paisible et scintillant.</p>
+
+      <p>Imaginée par une équipe étudiante passionnée, Cyb3r Heaven est née de l’envie de créer une marque à la croisée des styles — entre esthétique cyberpunk, inspirations 80’s, et sérénité céleste.</p>
+      <p>Avec son design vibrant, futuriste et lumineux, chaque bouteille vous ouvre une porte vers un ailleurs bienveillant, où tout semble plus doux, plus lent, presque hors du temps.</p>
+      <p>Dès la première gorgée, on s’y sent bien… comme si le monde s’effaçait doucement pour laisser place à un rêve onirique, nostalgique et coloré.</p>
       </p>
     </div>
     <div class="video-container">
-      <video class="video" controls>
-        <source src="liendelavideo.mp4" type="video/mp4">
-        Votre navigateur ne prend pas en charge la vidéo.
-      </video>
+     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZmcT-9czHdo?si=Rs_xw6T6NvWWyMb9" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
     </div>
 
     <div class="bg"></div>
