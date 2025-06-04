@@ -17,109 +17,19 @@ body {
 }
 
 
-/* CSS CAROUSSEL */
-
-#carousel {
-  width: 1200px;
-  height: 700px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-  animation: mymove 3s infinite alternate;
-
-}
-
-@keyframes mymove {
-  0% {
-    background-color: #00ffff;
-  }
-
-  100% {
-    background-color: #09092e;
-  }
-}
 
 
-#description {
-  padding: 0 0 0 40px;
-}
 
-.slider {
-  display: flex;
-  width: 600%;
-  /* 6 slides = 100% * 6 */
-  height: 100%;
-  animation: slide 30s infinite;
-}
 
-.slide {
-  width: 16.6666%;
-  /* 100% / 6 */
-  flex-shrink: 0;
-}
 
-.slide img {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
 
-  13% {
-    transform: translateX(0%);
-  }
 
-  16.66% {
-    transform: translateX(-16.6666%);
-  }
 
-  29.66% {
-    transform: translateX(-16.6666%);
-  }
 
-  33.33% {
-    transform: translateX(-33.3333%);
-  }
 
-  46.33% {
-    transform: translateX(-33.3333%);
-  }
 
-  50% {
-    transform: translateX(-50%);
-  }
 
-  63% {
-    transform: translateX(-50%);
-  }
-
-  66.66% {
-    transform: translateX(-66.6666%);
-  }
-
-  79.66% {
-    transform: translateX(-66.6666%);
-  }
-
-  83.33% {
-    transform: translateX(-83.3333%);
-  }
-
-  96.33% {
-    transform: translateX(-83.3333%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
 
 
 .bg {
@@ -142,6 +52,13 @@ body {
 .bg3 {
   animation-duration: 5s;
 }
+
+
+
+
+
+
+
 
 
 @keyframes slidi {
@@ -786,132 +703,6 @@ input[type="password"] {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
-
-:root {
-  --neon-pink: #ff2a6d;
-  --neon-blue: #05d9e8;
-  --dark-bg: #0d0221;
-}
-
-
-.login-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px;
-  margin: 50px auto;
-  border-radius: 8px;
-  border: 2px solid var(--neon-blue);
-  box-shadow: 0 0 10px var(--neon-blue), inset 0 0 10px var(--neon-blue);
-}
-
-.login-container h2 {
-  text-align: center;
-  display: block;
-  color: var(--neon-pink);
-  font-family: 'Orbitron', sans-serif;
-  text-shadow: 0 0 5px var(--neon-pink);
-
-
-}
-
-.form-group {
-  margin-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-.form-group1 label {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--neon-blue);
-  text-shadow: 0 0 5px var(--neon-blue);
-  padding: 15px;
-}
-
-.form-group2 label {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--neon-blue);
-  text-shadow: 0 0 5px var(--neon-blue);
-  padding: 15px;
-}
-
-
-
-.form-group1 input,
-.form-group2 input {
-
-  padding: 8px;
-  border: 1px solid var(--neon-blue);
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-.input #password {
-  display: block;
-}
-
-
-
-.form-group button {
-  background-color: var(--neon-pink);
-  color: black;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  padding: 15px;
-}
-
-.form-group {
-  margin: 25px;
-}
-
-.form-group button:hover {
-  background-color: #ff598f;
-}
-
-.error-message {
-  color: var(--neon-pink);
-  margin-top: 10px;
-  text-align: center;
-  text-shadow: 0 0 5px var(--neon-pink);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* sources :  code réalisé par Matt Gross sur Codepen.io*/
-
-
 
 
 .hero {
@@ -1283,7 +1074,9 @@ input[type="password"] {
 
 /* fin code de l'artiste crédité*/
 
-
+#hero2 {
+  margin-left: 300px;
+}
 
 
 
@@ -1856,64 +1649,6 @@ a {
 
 
 
-.SpeedLineArea {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  pointer-events: none;
-  perspective: 200px;
-  overflow: hidden;
-  transform-style: preserve-3d;
-}
-
-.SpeedLineChange {
-  position: absolute;
-  transform-style: preserve-3d;
-  animation: Closiing 5s infinite linear;
-}
-
-@keyframes Closiing {
-  0% {
-    transform: translate3d(0, 0, -3000px);
-  }
-
-  100% {
-    transform: translate3d(0, 0, 200px);
-  }
-}
-
-.SpeedLine {
-  width: 100px;
-  height: 10px;
-  background: linear-gradient(90deg, #00f, #0ff);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.login-container {
-  position: relative;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 350px;
-  margin: 60px auto;
-  color: white;
-  box-shadow: 0 0 15px #0ff;
-  /* reference du code (modifié) : HD player sur codepen.io */
-}
-
-#panier {
-  width: 50px;
-}
-
-#logo-compte {
-  width: 50px;
-
-}
 
 
 

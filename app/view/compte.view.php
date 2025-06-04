@@ -1,4 +1,4 @@
- 
+<link rel="stylesheet" href="public/css/compte.css">
    
    <div class="login-container">
     <h2>Connexion à la matrice</h2>
@@ -27,7 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-   if (username === 'cyb3rheaven' && password === 'mmi') {
+   if (username === 'aimemihi' && password === 'mmi') {
     alert('Système contourné avec succès ! Bienvenue dans la matrice, agent V.');
 } else {
     // Redirige vers la page "hacked"
