@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/css/compte.css">
+
    
    <div class="login-container">
     <h2>Connexion à la matrice</h2>
