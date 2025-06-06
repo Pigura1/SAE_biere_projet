@@ -12,7 +12,7 @@
 
       <div class="social-box">
         <p>Sur notre chaîne YouTube</p>
-        <a class="social-youtube" href="https://www.youtube.com/user/CyberPunkGame" target="_blank">
+        <a class="social-youtube" href="https://www.youtube.com/@Cyb3rHeaven" target="_blank">
       <img src="public/images/youtube.svg" alt="Youtube">
     </a>
       </div>

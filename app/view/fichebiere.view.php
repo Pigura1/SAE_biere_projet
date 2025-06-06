@@ -5,15 +5,16 @@
             <img src="public/images/big/<?php echo $data["fichebiere"]["Images"] ?>" alt="photo de <?php echo $data["fichebiere"]["Nom"] ?>" />
         </figure>
         <div class="bierefiche-infos">
+            <div>
+               <p class="biere-prixe">Prix : <span><?php echo$data["fichebiere"]["Prix"]  ?> €</span></p> 
+            </div>
               <p class="desce">
                 <?php echo $data["fichebiere"]["Description"] ?>
             </p>
             
-            <div>
-               <p class="biere-prixe">Prix : <span><?php echo$data["fichebiere"]["Prix"]  ?> €</span></p> 
-            </div>
+            
             <div class="data">
-                <p class="ingredients">Les ingrédients sont <?php echo $data["fichebiere"]["Ingredients"] ?></p>
+                <p class="ingredients"> Ingrédients  : <?php echo $data["fichebiere"]["Ingredients"] ?></p>
             </div>
             
             <div>

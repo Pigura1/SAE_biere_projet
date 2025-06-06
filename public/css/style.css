@@ -152,14 +152,16 @@ img {
 /* Pages bière */
 .bierefiche-infos {
   display: flex;
-  width: min(50%, 600px);
-  margin-right: 2rem;
-  margin-left: 4rem;
-  font-size: 2rem;
-  vertical-align: top;
-  text-align: left;
   flex-wrap: wrap;
-  padding-top: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 15px #00f0ff55;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+  align-self: center;
 }
 
 .biereimg .photobiere {
@@ -177,7 +179,7 @@ img {
 .biereimg {
   display: grid;
 
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto 400px;
 }
 
 .bierefiche-infos {
@@ -594,6 +596,7 @@ input[type="password"] {
 
 .biere-infos {
   padding: 1rem;
+  text-align: center;
 }
 
 .biere-nom {
@@ -649,8 +652,7 @@ input[type="password"] {
   text-align: center;
   width: anchor-size(max-width);
   
-  
-  margin-left: 80px;
+
   padding: 20px;
 }
 
@@ -1360,13 +1362,15 @@ main {
 .mobile-menu img {
   margin: 0 auto;
   display: block;
-  transform: scale(3.8);
+  transform: scale(3.5);
   /* 150% de la taille originale */
-  padding-bottom: 20px;
+  
 
 }
 
-
+.produitlien{
+  padding-top: 40px;
+}
 
 /* Bouton de fermeture du menu mobile */
 .close-mobile {

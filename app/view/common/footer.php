@@ -40,7 +40,7 @@
   <span>Retrouvez-nous sur :</span>
   
   <div class="socials-inline">
-    <a class="social-youtube" href="https://www.youtube.com/user/CyberPunkGame" target="_blank">
+    <a class="social-youtube" href="https://www.youtube.com/@Cyb3rHeaven" target="_blank">
       <img src="public/images/youtube.svg" alt="Youtube">
     </a>
     <a class="social-instagram" href="https://www.instagram.com/cyb3r_heaven?igsh=OHRkc2x5cDJqa3Zm&utm_source=qr" target="_blank">
