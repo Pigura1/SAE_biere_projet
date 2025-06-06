@@ -39,14 +39,6 @@
 
 
 
-
-
-
-
-
-
-
-
 <h1>// NOS CYBEERS //</h1>
 <h2>UNE GAMME R3TRO-FUTURISTE</h2>
 
@@ -107,42 +99,62 @@
 </div>
 
 <script>
-  const slides = document.querySelectorAll('.slide');
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-  let index = 0;
+  const slider = document.querySelector('.slider');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const slideWidth = slides[0].offsetWidth;
 
-  function updateSlider() {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      if (i === index) slide.classList.add('active');
-    });
-    document.querySelector('.slider').style.transform = `translateX(-${index * 360}px)`;
+  // Clone first and last slides
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[slides.length - 1].cloneNode(true);
+  firstClone.classList.add('clone');
+  lastClone.classList.add('clone');
+
+  slider.appendChild(firstClone);
+  slider.insertBefore(lastClone, slides[0]);
+
+  const allSlides = document.querySelectorAll('.slide');
+  let index = 1;
+
+  function setSlidePosition(animate = true) {
+    allSlides.forEach(slide => slide.classList.remove('active'));
+    allSlides[index].classList.add('active');
+
+    slider.style.transition = animate ? 'transform 0.6s ease-in-out' : 'none';
+    slider.style.transform = `translateX(-${index * slideWidth}px)`;
   }
 
-  prevBtn.addEventListener('click', () => {
-    index = (index - 1 + slides.length) % slides.length;
-    updateSlider();
-  });
+  function nextSlide() {
+    index++;
+    setSlidePosition();
 
-  nextBtn.addEventListener('click', () => {
-    index = (index + 1) % slides.length;
-    updateSlider();
-  });
-
-  function autoSlide() {
-    index = (index + 1) % slides.length;
-    updateSlider();
+    if (index === allSlides.length - 1) {
+      setTimeout(() => {
+        index = 1;
+        setSlidePosition(false);
+      }, 600);
+    }
   }
 
-  setInterval(autoSlide, 4000);
+  function prevSlide() {
+    index--;
+    setSlidePosition();
 
-  updateSlider();
+    if (index === 0) {
+      setTimeout(() => {
+        index = allSlides.length - 2;
+        setSlidePosition(false);
+      }, 600);
+    }
+  }
+
+  document.querySelector('.next').addEventListener('click', nextSlide);
+  document.querySelector('.prev').addEventListener('click', prevSlide);
+
+  setInterval(nextSlide, 4000);
+
+  window.addEventListener('resize', () => setSlidePosition(false));
+  setSlidePosition(false);
 </script>
-
-
-
-
 
 
 <a href="index.php?route=produit" class="buy-button">Acheter maintenant</a>
