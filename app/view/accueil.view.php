@@ -12,6 +12,40 @@
 
 
   
+    <div class="presentation">
+  <p>Plongez dans un monde où le rétro-futurisme rencontre la douceur d’un moment suspendu.</p>
+  <p>Cyb3r Heaven, c’est bien plus qu’une simple bière : c’est une expérience sensorielle, une échappée virtuelle vers un paradis paisible et scintillant.</p>
+  <p>Imaginée par une équipe étudiante passionnée, Cyb3r Heaven est née de l’envie de créer une marque à la croisée des styles — entre esthétique cyberpunk et inspirations 80’s.</p>
+  <p>Avec son design vibrant, futuriste et lumineux, chaque bouteille vous ouvre une porte vers un ailleurs bienveillant, où tout semble plus lent, presque hors du temps.</p>
+  <p>Dès la première gorgée, on s’y sent bien… comme si le monde s’effaçait doucement pour laisser place à un rêve onirique, nostalgique et coloré.</p>
+</div>
+    <div class="video-container">
+     <iframe class="video" width="660" height="515" src="https://www.youtube.com/embed/ZmcT-9czHdo?si=Rs_xw6T6NvWWyMb9" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+    </div>
+
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+</body>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h1>// NOS CYBEERS //</h1>
 <h2>UNE GAMME R3TRO-FUTURISTE</h2>
@@ -109,31 +143,6 @@
 
 
 
-    <div class="presentation">
-       <h2 class="hero glitch layers" data-text="EXAMPLE" id="hero2">
-      <span>Notre histoire</span>
-    </h2>
-      <p>Plongez dans un monde où le rétro-futurisme rencontre la douceur d’un moment suspendu.
-      <br> </br> 
-      <p>Cyb3r Heaven, c’est bien plus qu’une simple bière : c’est une expérience sensorielle, une échappée virtuelle vers un paradis paisible et scintillant.</p>
-
-      <p>Imaginée par une équipe étudiante passionnée, Cyb3r Heaven est née de l’envie de créer une marque à la croisée des styles — entre esthétique cyberpunk, inspirations 80’s, et sérénité céleste.</p>
-      <p>Avec son design vibrant, futuriste et lumineux, chaque bouteille vous ouvre une porte vers un ailleurs bienveillant, où tout semble plus doux, plus lent, presque hors du temps.</p>
-      <p>Dès la première gorgée, on s’y sent bien… comme si le monde s’effaçait doucement pour laisser place à un rêve onirique, nostalgique et coloré.</p>
-      </p>
-    </div>
-    <div class="video-container">
-     <iframe class="video" width="660" height="515" src="https://www.youtube.com/embed/ZmcT-9czHdo?si=Rs_xw6T6NvWWyMb9" 
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-</iframe>
-    </div>
-
-    <div class="bg"></div>
-<div class="bg bg2"></div>
-<div class="bg bg3"></div>
-</body>
-</main>
 
 
 <a href="index.php?route=produit" class="buy-button">Acheter maintenant</a>

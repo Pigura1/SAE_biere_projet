@@ -150,3 +150,31 @@ body::before {
 
 /* ---- FONT IMPORT ---- */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+
+
+.presentation {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 15px #00f0ff55;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff;
+  text-align: center;
+}
+
+.presentation p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #e0f7ff;
+}

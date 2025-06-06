@@ -60,10 +60,6 @@
 
 
 
-
-
-
-
 <script>
   const toggleBtn = document.querySelector('.menu-toggle');
   const navList = document.querySelector('nav ul');
