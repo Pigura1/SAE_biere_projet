@@ -179,9 +179,19 @@ img {
 .biereimg {
   display: grid;
 
-  grid-template-columns: auto auto 400px;
+  grid-template-columns: 400px auto ;
+  
 }
-
+@media (max-width: 732px){
+  .photobiere {
+      display: flex;
+      flex-shrink: none;
+  }
+  .biereimg{
+    display: flex;
+    flex-direction: column;
+  }
+}
 .bierefiche-infos {
 
   grid-column: 2/3;
@@ -1349,6 +1359,7 @@ main {
   color: rgb(255, 255, 255);
   font-size: 1.25rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mobile-menu a.btn-login {

@@ -43,7 +43,7 @@
   <!-- Mobile Menu -->
     <div class="mobile-menu">
       <button class="close-mobile">✖</button>
-       <img src="public/images/small/Render.gif" alt="Logo" class="h" />
+       <a href="index.php?route=home"><img src="public/images/small/Render.gif" alt="Logo" class="h" /></a>
        
     <a href="index.php?route=produit" class="produitlien">Produits</a>
     <a href="index.php?route=trombinoscope">À propos</a>
