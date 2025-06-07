@@ -7,10 +7,14 @@
     <div class="container">
       <div class="card">
         <img src="public/images/logo.png" alt="logo" class="logo">
-        <h1 class="titre">Bienvenue chez Cyb3rHeaven, avez-vous 18 ans ou plus ?</h1>
+        <h1 class="titre">ATTENTION : Individu suspect détecté.</h1>
+          <h1>La matrice Cyb3r Heaven est réservée aux unités matures (18+).
+            <h1>Veuillez confirmer votre âge.</h1>
+          </h1>
+          <h1></h1>
         <div class="buttons">
-          <button onclick="validerAge(true)">OUI</button>
-          <button onclick="validerAge(false)">NON</button>
+          <button onclick="validerAge(true)">18 +</button>
+          <button onclick="validerAge(false)">18 -</button>
         </div>
         <p id="message-erreur"></p>
         <small>En cliquant sur “OUI”, vous confirmez que vous êtes majeur et acceptez nos conditions d'utilisation et notre politique de confidentialité.</small>
@@ -22,7 +26,7 @@
         if (Majeur) {
           window.location.href = "index.php?route=home"; 
         } else {
-          document.getElementById("message-erreur").innerText = "Vous devez être majeur pour accéder au site.";
+          document.getElementById("message-erreur").innerText = "ALERTE INTRUSION SUSPECTE : AUTO-DESTRUCTION IMMINENTE.";
           document.getElementById("message-erreur").style.color = "red";
         }
       }

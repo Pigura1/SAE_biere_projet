@@ -151,66 +151,219 @@ img {
 
 
 
+@media (max-width: 768px) {
+  .student-cards {
+    margin-left: 50px;
+  }
+}
 
 
-/* Pages bière */
-.bierefiche-infos {
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE BIÈRE */
+
+.listebiere {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.nomdelabiere {
+  font-size: 2rem;
+  color: #00f0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px #00f0ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.biereimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.photobiere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photobiere img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bierefiche-infos {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid #00f0ff;
   box-shadow: 0 0 15px #00f0ff55;
   border-radius: 1rem;
   padding: 2rem;
-  max-width: 400px;
-  margin: 0 auto;
   backdrop-filter: blur(8px);
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.biereimg .photobiere {
-  display: inline-block;
-  width: min(90%, 700px);
-  margin-left: 2rem;
-
-}
-
-.photobiere {
-  grid-column: 1/2;
-
-}
-
-.biereimg {
-  display: grid;
-
-  grid-template-columns: 400px auto ;
-  
-}
-@media (max-width: 732px){
-  .photobiere {
-      display: flex;
-      flex-shrink: none;
-  }
-  .biereimg{
-    display: flex;
-    flex-direction: column;
-  }
-}
-.bierefiche-infos {
-
-  grid-column: 2/3;
-}
-
-.ingredients,
 .biere-prixe,
+.ingredients,
 .desce {
-  padding: 1rem;
-  
+  color: white;
+  line-height: 1.6;
+}
+
+.biere-prixe span {
+  color: #00f0ff;
+  font-weight: bold;
 }
 
 .form-panier {
-  margin-bottom: 20px;
+  border: 1px solid #00f0ff;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px #00f0ff55;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 250px;
 }
+
+.quantite-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantite-wrapper label {
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+.quantite-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantite-selector button {
+  background: #000;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  font-size: 1rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quantite-selector input {
+  width: 3rem;
+  text-align: center;
+  background: #111;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  border-radius: 5px;
+}
+
+.btn-ajout {
+  background-color: #00f0ff;
+  border: none;
+  color: #000;
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f0ffaa;
+  transition: background 0.3s ease;
+}
+
+.btn-ajout:hover {
+  background-color: #0ff;
+}
+ 
+
+@media (max-width: 768px) {
+  .listebiere {
+    padding: 1rem;
+  }
+
+  .biereimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .photobiere {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photobiere img {
+    height: auto;
+  }
+
+  .bierefiche-infos {
+    width: 100%;
+    max-width: 95%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .form-panier {
+    max-width: 100%;
+    width: 100%;
+    align-self: center;
+  }
+
+  .quantite-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-ajout {
+    text-align: center;
+  }
+  .form-panier {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Recherche */
 form {
@@ -1795,8 +1948,9 @@ footer>p {
 
 .footer-logo-details img {
   width: 60%;
-  text-align: right;
-  margin-bottom: -10px;
+  cursor: pointer !important;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 /* Icônes sociales en ligne */
@@ -1812,6 +1966,72 @@ footer>p {
   margin-top: 5px;
   align-items: center;
 }
+
+
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .footer-menus,
+  .footer-mentions,
+  .footer-newsletter,
+  .footer-socials {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .footer-newsletter form {
+    align-items: center;
+  }
+
+  .footer-newsletter input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .footer-socials {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-socials .socials-inline {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-socials a img {
+    width: 40px;
+
+  }
+
+  .footer-logo-details img {
+    width: 80%;
+    margin: 1rem auto;
+    
+  }
+
+  footer > p,
+  .footer-droits {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
 
 
 
